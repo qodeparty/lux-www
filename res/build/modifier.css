@@ -29,3 +29,12 @@
   position: relative;
   vertical-align: baseline;
 }
+.is-static {
+  flex: none;
+}
+.is-hidden {
+  display: none;
+}
+.is-block {
+  display: block;
+}
