@@ -248,7 +248,7 @@
     flex-direction: column;
   }
 }
-@media screen and (min-width: 0rem) and (max-width: 22.5rem) {
+@media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
   .is-hidden-nano {
     display: none;
   }
@@ -387,7 +387,7 @@
     margin-left: 100%;
   }
 }
-@media screen and (min-width: 22.5rem) and (max-width: 48rem) {
+@media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   .is-hidden-mobile {
     display: none;
   }
@@ -526,7 +526,7 @@
     margin-left: 100%;
   }
 }
-@media screen and (min-width: 48rem) and (max-width: 64rem) {
+@media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
   .is-hidden-tablet {
     display: none;
   }
@@ -665,7 +665,7 @@
     margin-left: 100%;
   }
 }
-@media screen and (min-width: 64rem) and (max-width: 76rem) {
+@media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
   .is-hidden-desktop {
     display: none;
   }
@@ -804,7 +804,7 @@
     margin-left: 100%;
   }
 }
-@media screen and (min-width: 76rem) and (max-width: 90rem) {
+@media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
   .is-hidden-wide {
     display: none;
   }
@@ -943,7 +943,7 @@
     margin-left: 100%;
   }
 }
-@media screen and (min-width: 90rem) and (max-width: 120rem) {
+@media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
   .is-hidden-full {
     display: none;
   }
@@ -1082,7 +1082,7 @@
     margin-left: 100%;
   }
 }
-@media screen and (min-width: 120rem) and (max-width: 160rem) {
+@media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
   .is-hidden-jumbo {
     display: none;
   }

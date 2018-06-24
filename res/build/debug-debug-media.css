@@ -25,7 +25,7 @@ button.as-display {
   display: none;
   color: #fff;
 }
-@media screen and (min-width: 0rem) and (max-width: 22.5rem) {
+@media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
   body.debug {
     background: #ddd;
   }
@@ -38,7 +38,7 @@ button.as-display {
     width: 25%;
   }
 }
-@media screen and (min-width: 22.5rem) and (max-width: 48rem) {
+@media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   body.debug {
     background: #94d8ed;
   }
@@ -54,7 +54,7 @@ button.as-display {
     width: 25%;
   }
 }
-@media screen and (min-width: 48rem) and (max-width: 64rem) {
+@media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
   body.debug {
     background: #55bced;
   }
@@ -70,7 +70,7 @@ button.as-display {
     width: 25%;
   }
 }
-@media screen and (min-width: 64rem) and (max-width: 76rem) {
+@media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
   body.debug {
     background: #28a9e1;
   }
@@ -86,7 +86,7 @@ button.as-display {
     width: 25%;
   }
 }
-@media screen and (min-width: 76rem) and (max-width: 90rem) {
+@media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
   body.debug {
     background: #147bbc;
   }
@@ -99,7 +99,7 @@ button.as-display {
     width: 25%;
   }
 }
-@media screen and (min-width: 90rem) and (max-width: 120rem) {
+@media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
   body.debug {
     background: #0a6ba8;
   }
@@ -115,7 +115,7 @@ button.as-display {
     width: 25%;
   }
 }
-@media screen and (min-width: 120rem) and (max-width: 160rem) {
+@media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
   body.debug {
     background: #0a6ba8;
   }
@@ -128,7 +128,7 @@ button.as-display {
     width: 25%;
   }
 }
-@media screen and (min-width: 76rem) and (max-width: 160rem) {
+@media screen and (min-width: 76rem) and (max-width: 159.9375rem) {
   .is-size-1-hd {
     font-size: 2.75rem;
   }
