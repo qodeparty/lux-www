@@ -8,6 +8,13 @@
   background: linear-gradient(90deg, #fff 319px, #94d8ed 0, #94d8ed 320px, #fff 0, #fff 374px, #94d8ed 0, #94d8ed 375px, #fff 0, #fff 424px, #94d8ed 0, #94d8ed 425px, #fff 0, #fff 767px, #94d8ed 0, #94d8ed 768px, #fff 0, #fff 1023px, #94d8ed 0, #94d8ed 1024px, #fff 0, #fff 1215px, #94d8ed 0, #94d8ed 1216px, #fff 0, #fff 1439px, #94d8ed 0, #94d8ed 1440px, #fff 0, #fff 1919px, #94d8ed 0, #94d8ed 1920px, #fff 0, #fff 2559px, #94d8ed 0, #94d8ed 2560px, #fff 0);
   background-position: 0;
 }
+.theme-unity .row > div,
+.theme-unity .col {
+  box-shadow: 1px 0 0 0 var(--box-shadow-color), 0 1px 0 0 var(--box-shadow-color), 1px 1px 0 0 var(--box-shadow-color), 1px 0 0 0 var(--box-shadow-color) inset, 0 1px 0 0 var(--box-shadow-color) inset;
+}
+body.debug.theme-unity {
+  color: var(--debug-color);
+}
 .debug-display {
   position: fixed;
   bottom: 0;
@@ -24,11 +31,13 @@ button.as-display {
 }
 @media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
   body.debug {
-    background: #ddd;
+    background: #cbeaf3;
+    --box-shadow-color: #55bced;
+    --debug-color: #55bced;
   }
   .as-display.is-nano {
     display: block;
-    background: #000;
+    background: #0c4e7a;
   }
   .row > .nano-with-span-2 {
     flex: none;
@@ -37,11 +46,13 @@ button.as-display {
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   body.debug {
-    background: #94d8ed;
+    background: #c1e4ef;
+    --debug-color: #28a9e1;
+    --box-shadow-color: #28a9e1;
   }
   .as-display.is-mobile {
     display: block;
-    background: #0c4e7a;
+    background: #0a6ba8;
   }
   .is-size-1-mobile {
     font-size: 2.75rem;
@@ -53,11 +64,13 @@ button.as-display {
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
   body.debug {
-    background: #55bced;
+    background: #94d8ed;
+    --debug-color: #147bbc;
+    --box-shadow-color: #147bbc;
   }
   .as-display.is-tablet {
     display: block;
-    background: #0a6ba8;
+    background: #147bbc;
   }
   .is-size-1-tablet {
     font-size: 2.75rem;
@@ -69,11 +82,13 @@ button.as-display {
 }
 @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
   body.debug {
-    background: #28a9e1;
+    background: #55bced;
+    --debug-color: #0a6ba8;
+    --box-shadow-color: #0a6ba8;
   }
   .as-display.is-desktop {
     display: block;
-    background: #147bbc;
+    background: #28a9e1;
   }
   .is-size-1-desktop {
     font-size: 2.75rem;
@@ -85,11 +100,13 @@ button.as-display {
 }
 @media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
   body.debug {
-    background: #147bbc;
+    background: #28a9e1;
+    --debug-color: #c1e4ef;
+    --box-shadow-color: #c1e4ef;
   }
   .as-display.is-wide {
     display: block;
-    background: #28a9e1;
+    background: #55bced;
   }
   .row > .wide-with-span-2 {
     flex: none;
@@ -98,7 +115,9 @@ button.as-display {
 }
 @media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
   body.debug {
-    background: #0a6ba8;
+    background: #147bbc;
+    --debug-color: #94d8ed;
+    --box-shadow-color: #94d8ed;
   }
   .as-display.is-full {
     display: block;
@@ -115,10 +134,12 @@ button.as-display {
 @media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
   body.debug {
     background: #0a6ba8;
+    --debug-color: #55bced;
+    --box-shadow-color: #55bced;
   }
   .as-display.is-jumbo {
     display: block;
-    background: #55bced;
+    background: #c1e4ef;
   }
   .row > .jumbo-with-span-2 {
     flex: none;
@@ -137,6 +158,8 @@ button.as-display {
 @media screen and (min-width: 160rem) {
   body.debug {
     background: #0c4e7a;
+    --debug-color: #55bced;
+    --box-shadow-color: #55bced;
   }
   .as-display.is-ultra {
     display: block;
@@ -241,8 +264,4 @@ button.as-display {
   background-image: linear-gradient(rgba(255,255,255,0.1) 0px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 0px, transparent 1px), linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
-}
-.theme-unity .row > div,
-.theme-unity .col {
-  box-shadow: 1px 0 0 0 #55bced, 0 1px 0 0 #55bced, 1px 1px 0 0 #55bced, 1px 0 0 0 #55bced inset, 0 1px 0 0 #55bced inset;
 }
