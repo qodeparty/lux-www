@@ -12,26 +12,8 @@
   background-position: 0;
 }
 /* //////////////////////////////////////////////////////////////////////////////
-// Theme
+// Media!
 ///////////////////////////////////////////////////////////////////////////// */
-.theme-unity .row > div,
-.theme-unity .col {
-  box-shadow: 1px 0 0 0 var(--box-shadow-color), 0 1px 0 0 var(--box-shadow-color), 1px 1px 0 0 var(--box-shadow-color), 1px 0 0 0 var(--box-shadow-color) inset, 0 1px 0 0 var(--box-shadow-color) inset;
-}
-body.debug.theme-unity {
-  color: var(--debug-color);
-}
-.debug-display {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-.debug-links {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1em;
-}
 button.as-display {
   border: 1px solid #ccc;
   font-family: sans-serif;

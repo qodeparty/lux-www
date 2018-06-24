@@ -1,5 +1,5 @@
 #annotate {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   padding: 10px;
 }
 #annotate #inline div {
@@ -90,4 +90,54 @@
   background-image: linear-gradient(rgba(255,255,255,0.1) 0px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 0px, transparent 1px), linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+/* //////////////////////////////////////////////////////////////////////////////
+// Theme
+///////////////////////////////////////////////////////////////////////////// */
+.luxlogo {
+  background-image: url("../img/lux.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  float: left;
+}
+.theme-unity .row > div,
+.theme-unity .col {
+  box-shadow: 1px 0 0 0 var(--box-shadow-color), 0 1px 0 0 var(--box-shadow-color), 1px 1px 0 0 var(--box-shadow-color), 1px 0 0 0 var(--box-shadow-color) inset, 0 1px 0 0 var(--box-shadow-color) inset;
+}
+body.debug.theme-unity {
+  color: var(--debug-color);
+}
+.debug-display {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.debug-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  z-index: 999;
+}
+.debug-links a {
+  margin-top: 3px;
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 10px;
+  display: inline-block;
+  min-width: 30px;
+  border: 1px solid #fff;
+  color: #2aabe1;
+  background: #dbdbdb;
+}
+.debug-links section {
+  width: 100%;
+}
+.debug-links .curr {
+  background: #56bce1;
+  color: #fff;
 }
