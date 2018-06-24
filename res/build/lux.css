@@ -1732,14 +1732,21 @@ body.debug.theme-unity {
   bottom: 0;
   right: 0;
 }
+.debug-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+}
 button.as-display {
   border: 1px solid #ccc;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   float: left;
   margin: 2px;
   display: none;
   color: #fff;
+  height: 30px;
 }
 @media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
   body.debug {
@@ -1750,6 +1757,7 @@ button.as-display {
   .as-display.is-nano {
     display: block;
     background: #0c4e7a;
+    color: #c1e4ef;
   }
   .row > .nano-with-span-2 {
     flex: none;
@@ -1765,6 +1773,7 @@ button.as-display {
   .as-display.is-mobile {
     display: block;
     background: #0a6ba8;
+    color: #c1e4ef;
   }
   .is-size-1-mobile {
     font-size: 2.75rem;
@@ -1783,6 +1792,7 @@ button.as-display {
   .as-display.is-tablet {
     display: block;
     background: #147bbc;
+    color: #c1e4ef;
   }
   .is-size-1-tablet {
     font-size: 2.75rem;
@@ -1801,6 +1811,7 @@ button.as-display {
   .as-display.is-desktop {
     display: block;
     background: #28a9e1;
+    color: #cbeaf3;
   }
   .is-size-1-desktop {
     font-size: 2.75rem;
@@ -1819,6 +1830,7 @@ button.as-display {
   .as-display.is-wide {
     display: block;
     background: #55bced;
+    color: #cbeaf3;
   }
   .row > .wide-with-span-2 {
     flex: none;
@@ -1834,6 +1846,7 @@ button.as-display {
   .as-display.is-full {
     display: block;
     background: #94d8ed;
+    color: #147bbc;
   }
   .is-size-1-full {
     font-size: 2.75rem;
@@ -1852,6 +1865,7 @@ button.as-display {
   .as-display.is-jumbo {
     display: block;
     background: #c1e4ef;
+    color: #0a6ba8;
   }
   .row > .jumbo-with-span-2 {
     flex: none;
@@ -1876,6 +1890,7 @@ button.as-display {
   .as-display.is-ultra {
     display: block;
     background: #cbeaf3;
+    color: #0a6ba8;
   }
   .is-size-1-ultra {
     font-size: 2.75rem;
@@ -1886,6 +1901,7 @@ button.as-display {
   }
 }
 #annotate {
+  margin-top: 3rem;
   padding: 10px;
 }
 #annotate #inline div {
