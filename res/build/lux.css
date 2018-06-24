@@ -1884,7 +1884,6 @@ button.as-display {
 }
 #annotate {
   margin-top: 4.5rem;
-  padding: 10px;
 }
 #annotate #inline div {
   color: #bbb;
@@ -1895,7 +1894,7 @@ button.as-display {
 #annotate .break {
   border: none;
   border-top: 1px dotted var(--debug-color);
-  padding-top: 10px;
+  margin: 10px;
 }
 #annotate .grouping {
   border: 1px dotted #75b8fb;
@@ -1939,6 +1938,7 @@ button.as-display {
   font-family: sans-serif;
   color: var(--debug-color);
   font-size: 9px;
+  padding: 10px;
 }
 #annotate .title {
   text-transform: uppercase;
