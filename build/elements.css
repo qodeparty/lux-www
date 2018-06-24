@@ -1,0 +1,21 @@
+/* //////////////////////////////////////////////////////////////////////////////
+// LUX!
+////////////////////////////////////////////////////////////////////////////// */
+h1.is-title {
+  font-size: 2.75rem;
+}
+h2.is-title {
+  font-size: 2.5rem;
+}
+h3.is-title {
+  font-size: 2.25rem;
+}
+h4.is-title {
+  font-size: 2rem;
+}
+h5.is-title {
+  font-size: 1.75rem;
+}
+h6.is-title {
+  font-size: 1.5rem;
+}
