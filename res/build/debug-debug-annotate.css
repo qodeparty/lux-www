@@ -10,7 +10,7 @@
 }
 #annotate .break {
   border: none;
-  border-top: 1px dotted #eee;
+  border-top: 1px dotted var(--debug-color);
   padding-top: 10px;
 }
 #annotate .grouping {
@@ -50,15 +50,13 @@
   line-height: 1.5pt;
 }
 #annotate .notes,
-#annotate .note {
+#annotate .note,
+#annotate .title {
   font-family: sans-serif;
-  color: #eee;
+  color: var(--debug-color);
   font-size: 9px;
 }
 #annotate .title {
-  font-family: sans-serif;
-  color: #eee;
-  font-size: 9px;
   text-transform: uppercase;
 }
 #annotate .code {
