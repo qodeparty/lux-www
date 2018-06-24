@@ -89,6 +89,25 @@
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
+#annotate .has-notes {
+  padding: 0 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+#annotate .has-notes[title]:before {
+  content: attr(title);
+  background-color: #ebf9ff;
+  font-size: 0.7em;
+  padding: 2px;
+  padding-left: 5px;
+  color: #56bce1;
+  top: -1px;
+  left: 0;
+  position: absolute;
+  min-width: 100px;
+  text-align: left;
+  z-index: 100;
+}
 /* //////////////////////////////////////////////////////////////////////////////
 // Theme
 ///////////////////////////////////////////////////////////////////////////// */
@@ -100,9 +119,30 @@
   width: 30px;
   float: left;
 }
-.theme-unity .row > div,
-.theme-unity .col {
+.theme-unity .changes-shadow .row > div,
+.theme-unity .changes-shadow .col {
   box-shadow: 1px 0 0 0 var(--box-shadow-color), 0 1px 0 0 var(--box-shadow-color), 1px 1px 0 0 var(--box-shadow-color), 1px 0 0 0 var(--box-shadow-color) inset, 0 1px 0 0 var(--box-shadow-color) inset;
+}
+.theme-unity .changes-shadow .thing {
+  background: var(--debug-color);
+}
+.theme-unity .thing {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  background: rgba(86,188,225,0.5);
+  padding: 2.1325rem 0;
+  border-radius: 3px;
+  color: #fff;
+  position: relative;
+  min-width: 0.625rem;
+}
+.changes-background .thing {
+  background: var(--display-color, #576879);
+}
+.theme-unity .row > div {
+  box-shadow: 1px 0 0 0 #fff, 0 1px 0 0 #fff, 1px 1px 0 0 #fff, 1px 0 0 0 #fff inset, 0 1px 0 0 #fff inset;
 }
 body.debug.theme-unity {
   color: var(--debug-color);
@@ -111,6 +151,7 @@ body.debug.theme-unity {
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 999;
 }
 .debug-links {
   position: fixed;

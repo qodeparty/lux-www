@@ -29,6 +29,7 @@ button.as-display {
     background: #0c4e7a;
     --box-shadow-color: #55bced;
     --debug-color: #55bced;
+    --display-color: #f964cb;
   }
   .as-display.is-nano {
     display: block;
@@ -45,6 +46,7 @@ button.as-display {
     background: #0a6ba8;
     --debug-color: #55bced;
     --box-shadow-color: #55bced;
+    --display-color: #fa6563;
   }
   .as-display.is-mobile {
     display: block;
@@ -64,6 +66,7 @@ button.as-display {
     background: #147bbc;
     --debug-color: #94d8ed;
     --box-shadow-color: #94d8ed;
+    --display-color: #ffa64d;
   }
   .as-display.is-tablet {
     display: block;
@@ -83,6 +86,7 @@ button.as-display {
     background: #28a9e1;
     --debug-color: #c1e4ef;
     --box-shadow-color: #c1e4ef;
+    --display-color: #ffe056;
   }
   .as-display.is-desktop {
     display: block;
@@ -102,6 +106,7 @@ button.as-display {
     background: #55bced;
     --debug-color: #0a6ba8;
     --box-shadow-color: #0a6ba8;
+    --display-color: #94da87;
   }
   .as-display.is-wide {
     display: block;
@@ -118,6 +123,7 @@ button.as-display {
     background: #94d8ed;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
+    --display-color: #399e54;
   }
   .as-display.is-full {
     display: block;
@@ -137,6 +143,7 @@ button.as-display {
     background: #c1e4ef;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
+    --display-color: #39f;
   }
   .as-display.is-jumbo {
     display: block;
@@ -162,6 +169,7 @@ button.as-display {
     background: #cbeaf3;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
+    --display-color: #6868dc;
   }
   .as-display.is-ultra {
     display: block;

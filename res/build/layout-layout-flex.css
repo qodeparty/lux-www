@@ -6,14 +6,19 @@
 ///////////////////////////////////////////////////////////////////////////// */
 .row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  position: relative;
 }
 .col {
+  display: block;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 0.75rem;
+}
+.row.with-gaps > .col {
+  padding: 0.5rem;
+}
+.row.with-sm-gaps > .col {
+  padding: 0.25rem;
 }
 .col.is-1,
 .row > .spans-1 {
@@ -146,6 +151,13 @@
 }
 .row > .offsets-16 {
   margin-left: 100%;
+}
+.spans-all {
+  flex: none;
+  width: 100%;
+}
+.offsets-all {
+  visibility: hidden;
 }
 .row > .is-i0 {
   order: 0;

@@ -335,14 +335,19 @@ pre {
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  position: relative;
 }
 .col {
+  display: block;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 0.75rem;
+}
+.row.with-gaps > .col {
+  padding: 0.5rem;
+}
+.row.with-sm-gaps > .col {
+  padding: 0.25rem;
 }
 .col.is-1,
 .row > .spans-1 {
@@ -475,6 +480,13 @@ pre {
 }
 .row > .offsets-16 {
   margin-left: 100%;
+}
+.spans-all {
+  flex: none;
+  width: 100%;
+}
+.offsets-all {
+  visibility: hidden;
 }
 .row > .is-i0 {
   order: 0;
@@ -1735,6 +1747,7 @@ button.as-display {
     background: #0c4e7a;
     --box-shadow-color: #55bced;
     --debug-color: #55bced;
+    --display-color: #f964cb;
   }
   .as-display.is-nano {
     display: block;
@@ -1751,6 +1764,7 @@ button.as-display {
     background: #0a6ba8;
     --debug-color: #55bced;
     --box-shadow-color: #55bced;
+    --display-color: #fa6563;
   }
   .as-display.is-mobile {
     display: block;
@@ -1770,6 +1784,7 @@ button.as-display {
     background: #147bbc;
     --debug-color: #94d8ed;
     --box-shadow-color: #94d8ed;
+    --display-color: #ffa64d;
   }
   .as-display.is-tablet {
     display: block;
@@ -1789,6 +1804,7 @@ button.as-display {
     background: #28a9e1;
     --debug-color: #c1e4ef;
     --box-shadow-color: #c1e4ef;
+    --display-color: #ffe056;
   }
   .as-display.is-desktop {
     display: block;
@@ -1808,6 +1824,7 @@ button.as-display {
     background: #55bced;
     --debug-color: #0a6ba8;
     --box-shadow-color: #0a6ba8;
+    --display-color: #94da87;
   }
   .as-display.is-wide {
     display: block;
@@ -1824,6 +1841,7 @@ button.as-display {
     background: #94d8ed;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
+    --display-color: #399e54;
   }
   .as-display.is-full {
     display: block;
@@ -1843,6 +1861,7 @@ button.as-display {
     background: #c1e4ef;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
+    --display-color: #39f;
   }
   .as-display.is-jumbo {
     display: block;
@@ -1868,6 +1887,7 @@ button.as-display {
     background: #cbeaf3;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
+    --display-color: #6868dc;
   }
   .as-display.is-ultra {
     display: block;
@@ -1973,6 +1993,25 @@ button.as-display {
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
+#annotate .has-notes {
+  padding: 0 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+#annotate .has-notes[title]:before {
+  content: attr(title);
+  background-color: #ebf9ff;
+  font-size: 0.7em;
+  padding: 2px;
+  padding-left: 5px;
+  color: #56bce1;
+  top: -1px;
+  left: 0;
+  position: absolute;
+  min-width: 100px;
+  text-align: left;
+  z-index: 100;
+}
 .luxlogo {
   background-image: url("../img/lux.svg");
   background-repeat: no-repeat;
@@ -1981,9 +2020,30 @@ button.as-display {
   width: 30px;
   float: left;
 }
-.theme-unity .row > div,
-.theme-unity .col {
+.theme-unity .changes-shadow .row > div,
+.theme-unity .changes-shadow .col {
   box-shadow: 1px 0 0 0 var(--box-shadow-color), 0 1px 0 0 var(--box-shadow-color), 1px 1px 0 0 var(--box-shadow-color), 1px 0 0 0 var(--box-shadow-color) inset, 0 1px 0 0 var(--box-shadow-color) inset;
+}
+.theme-unity .changes-shadow .thing {
+  background: var(--debug-color);
+}
+.theme-unity .thing {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  background: rgba(86,188,225,0.5);
+  padding: 2.1325rem 0;
+  border-radius: 3px;
+  color: #fff;
+  position: relative;
+  min-width: 0.625rem;
+}
+.changes-background .thing {
+  background: var(--display-color, #576879);
+}
+.theme-unity .row > div {
+  box-shadow: 1px 0 0 0 #fff, 0 1px 0 0 #fff, 1px 1px 0 0 #fff, 1px 0 0 0 #fff inset, 0 1px 0 0 #fff inset;
 }
 body.debug.theme-unity {
   color: var(--debug-color);
@@ -1992,6 +2052,7 @@ body.debug.theme-unity {
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 999;
 }
 .debug-links {
   position: fixed;
