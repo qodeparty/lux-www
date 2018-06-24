@@ -1230,4 +1230,142 @@
     margin-left: 100%;
   }
 }
-ref()
+@media screen and (min-width: 160rem) {
+  .is-hidden-ultra {
+    display: none;
+  }
+  .is-block-ultra {
+    display: block;
+  }
+  .is-static-ultra {
+    flex: none;
+  }
+  .col.is-1-ultra,
+  .row > .spans-1-ultra {
+    width: 6.25%;
+    flex: none;
+  }
+  .row > .offsets-1-ultra {
+    margin-left: 6.25%;
+  }
+  .col.is-2-ultra,
+  .row > .spans-2-ultra {
+    width: 12.5%;
+    flex: none;
+  }
+  .row > .offsets-2-ultra {
+    margin-left: 12.5%;
+  }
+  .col.is-3-ultra,
+  .row > .spans-3-ultra {
+    width: 18.75%;
+    flex: none;
+  }
+  .row > .offsets-3-ultra {
+    margin-left: 18.75%;
+  }
+  .col.is-4-ultra,
+  .row > .spans-4-ultra {
+    width: 25%;
+    flex: none;
+  }
+  .row > .offsets-4-ultra {
+    margin-left: 25%;
+  }
+  .col.is-5-ultra,
+  .row > .spans-5-ultra {
+    width: 31.25%;
+    flex: none;
+  }
+  .row > .offsets-5-ultra {
+    margin-left: 31.25%;
+  }
+  .col.is-6-ultra,
+  .row > .spans-6-ultra {
+    width: 37.5%;
+    flex: none;
+  }
+  .row > .offsets-6-ultra {
+    margin-left: 37.5%;
+  }
+  .col.is-7-ultra,
+  .row > .spans-7-ultra {
+    width: 43.75%;
+    flex: none;
+  }
+  .row > .offsets-7-ultra {
+    margin-left: 43.75%;
+  }
+  .col.is-8-ultra,
+  .row > .spans-8-ultra {
+    width: 50%;
+    flex: none;
+  }
+  .row > .offsets-8-ultra {
+    margin-left: 50%;
+  }
+  .col.is-9-ultra,
+  .row > .spans-9-ultra {
+    width: 56.25%;
+    flex: none;
+  }
+  .row > .offsets-9-ultra {
+    margin-left: 56.25%;
+  }
+  .col.is-10-ultra,
+  .row > .spans-10-ultra {
+    width: 62.5%;
+    flex: none;
+  }
+  .row > .offsets-10-ultra {
+    margin-left: 62.5%;
+  }
+  .col.is-11-ultra,
+  .row > .spans-11-ultra {
+    width: 68.75%;
+    flex: none;
+  }
+  .row > .offsets-11-ultra {
+    margin-left: 68.75%;
+  }
+  .col.is-12-ultra,
+  .row > .spans-12-ultra {
+    width: 75%;
+    flex: none;
+  }
+  .row > .offsets-12-ultra {
+    margin-left: 75%;
+  }
+  .col.is-13-ultra,
+  .row > .spans-13-ultra {
+    width: 81.25%;
+    flex: none;
+  }
+  .row > .offsets-13-ultra {
+    margin-left: 81.25%;
+  }
+  .col.is-14-ultra,
+  .row > .spans-14-ultra {
+    width: 87.5%;
+    flex: none;
+  }
+  .row > .offsets-14-ultra {
+    margin-left: 87.5%;
+  }
+  .col.is-15-ultra,
+  .row > .spans-15-ultra {
+    width: 93.75%;
+    flex: none;
+  }
+  .row > .offsets-15-ultra {
+    margin-left: 93.75%;
+  }
+  .col.is-16-ultra,
+  .row > .spans-16-ultra {
+    width: 100%;
+    flex: none;
+  }
+  .row > .offsets-16-ultra {
+    margin-left: 100%;
+  }
+}
