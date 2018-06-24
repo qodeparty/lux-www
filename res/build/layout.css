@@ -255,7 +255,7 @@
 .row > .is-i32 {
   order: 32;
 }
-@media screen and (max-width: 64rem) {
+@media screen and (max-width: 63.9375rem) {
   .row.is-resp {
     flex-direction: column;
   }
