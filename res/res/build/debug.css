@@ -1,0 +1,283 @@
+.stripes4 {
+  background: repeating-linear-gradient(45deg, #ccc, #ccc 30px, #dbdbdb 30px, #dbdbdb 60px);
+}
+.stripes5 {
+  background: repeating-linear-gradient(45deg, #efefef, #efefef 10px, #ddd 10px, #ddd 20px);
+}
+.ruler {
+  background: linear-gradient(90deg, #fff 319px, #94d8ed 0, #94d8ed 320px, #fff 0, #fff 374px, #94d8ed 0, #94d8ed 375px, #fff 0, #fff 424px, #94d8ed 0, #94d8ed 425px, #fff 0, #fff 767px, #94d8ed 0, #94d8ed 768px, #fff 0, #fff 1023px, #94d8ed 0, #94d8ed 1024px, #fff 0, #fff 1215px, #94d8ed 0, #94d8ed 1216px, #fff 0, #fff 1439px, #94d8ed 0, #94d8ed 1440px, #fff 0, #fff 1919px, #94d8ed 0, #94d8ed 1920px, #fff 0, #fff 2559px, #94d8ed 0, #94d8ed 2560px, #fff 0);
+  background-position: 0;
+}
+.theme-unity .row > div,
+.theme-unity .col {
+  box-shadow: 1px 0 0 0 var(--box-shadow-color), 0 1px 0 0 var(--box-shadow-color), 1px 1px 0 0 var(--box-shadow-color), 1px 0 0 0 var(--box-shadow-color) inset, 0 1px 0 0 var(--box-shadow-color) inset;
+}
+body.debug.theme-unity {
+  color: var(--debug-color);
+}
+.debug-display {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.debug-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+}
+button.as-display {
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  font-size: 14px;
+  float: left;
+  margin: 2px;
+  display: none;
+  color: #fff;
+  height: 30px;
+}
+@media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
+  body.debug {
+    background: #cbeaf3;
+    --box-shadow-color: #55bced;
+    --debug-color: #55bced;
+  }
+  .as-display.is-nano {
+    display: block;
+    background: #0c4e7a;
+    color: #c1e4ef;
+  }
+  .row > .nano-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
+  body.debug {
+    background: #c1e4ef;
+    --debug-color: #28a9e1;
+    --box-shadow-color: #28a9e1;
+  }
+  .as-display.is-mobile {
+    display: block;
+    background: #0a6ba8;
+    color: #c1e4ef;
+  }
+  .is-size-1-mobile {
+    font-size: 2.75rem;
+  }
+  .row > .mobile-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
+  body.debug {
+    background: #94d8ed;
+    --debug-color: #147bbc;
+    --box-shadow-color: #147bbc;
+  }
+  .as-display.is-tablet {
+    display: block;
+    background: #147bbc;
+    color: #c1e4ef;
+  }
+  .is-size-1-tablet {
+    font-size: 2.75rem;
+  }
+  .row > .tablet-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
+  body.debug {
+    background: #55bced;
+    --debug-color: #0a6ba8;
+    --box-shadow-color: #0a6ba8;
+  }
+  .as-display.is-desktop {
+    display: block;
+    background: #28a9e1;
+    color: #cbeaf3;
+  }
+  .is-size-1-desktop {
+    font-size: 2.75rem;
+  }
+  .row > .desktop-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
+  body.debug {
+    background: #28a9e1;
+    --debug-color: #c1e4ef;
+    --box-shadow-color: #c1e4ef;
+  }
+  .as-display.is-wide {
+    display: block;
+    background: #55bced;
+    color: #cbeaf3;
+  }
+  .row > .wide-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
+  body.debug {
+    background: #147bbc;
+    --debug-color: #94d8ed;
+    --box-shadow-color: #94d8ed;
+  }
+  .as-display.is-full {
+    display: block;
+    background: #94d8ed;
+    color: #147bbc;
+  }
+  .is-size-1-full {
+    font-size: 2.75rem;
+  }
+  .row > .full-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
+  body.debug {
+    background: #0a6ba8;
+    --debug-color: #55bced;
+    --box-shadow-color: #55bced;
+  }
+  .as-display.is-jumbo {
+    display: block;
+    background: #c1e4ef;
+    color: #0a6ba8;
+  }
+  .row > .jumbo-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 76rem) and (max-width: 159.9375rem) {
+  .is-size-1-hd {
+    font-size: 2.75rem;
+  }
+  .row > .hd-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 160rem) {
+  body.debug {
+    background: #0c4e7a;
+    --debug-color: #55bced;
+    --box-shadow-color: #55bced;
+  }
+  .as-display.is-ultra {
+    display: block;
+    background: #cbeaf3;
+    color: #0a6ba8;
+  }
+  .is-size-1-ultra {
+    font-size: 2.75rem;
+  }
+  .row > .ultra-with-span-2 {
+    flex: none;
+    width: 25%;
+  }
+}
+#annotate {
+  margin-top: 3rem;
+  padding: 10px;
+}
+#annotate #inline div {
+  color: #bbb;
+}
+#annotate #inline div *:first-child {
+  color: #000;
+}
+#annotate .break {
+  border: none;
+  border-top: 1px dotted #eee;
+  padding-top: 10px;
+}
+#annotate .grouping {
+  border: 1px dotted #75b8fb;
+  background: #eee;
+  padding: 30px;
+  margin: 50px;
+}
+#annotate .grouping.note {
+  color: #fa6563;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#annotate .psuedo {
+  border: 1px dashed #ffa64d;
+  height: 20px;
+  position: relative;
+}
+#annotate .psuedo:before {
+  content: attr(title);
+  top: 20%;
+  left: 50%;
+  position: absolute;
+  color: #ffa64d;
+  font-family: sans-serif;
+  font-size: 9px;
+}
+#annotate .ref {
+  border: none;
+  border: 1px dashed #ffa64d;
+  padding: 1px 3px;
+  font-family: sans-serif;
+  color: #ffa64d;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 1.5pt;
+}
+#annotate .notes,
+#annotate .note {
+  font-family: sans-serif;
+  color: #eee;
+  font-size: 9px;
+}
+#annotate .title {
+  font-family: sans-serif;
+  color: #eee;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+#annotate .code {
+  display: none;
+}
+#annotate [data-tag] {
+  border: 1px dotted #75b8fb;
+  margin: 5px 0;
+  padding: 5px;
+}
+#annotate [data-tag]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#annotate .clearfix {
+  display: block;
+}
+#annotate .clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+#annotate.bg-grid {
+  background-image: linear-gradient(rgba(255,255,255,0.1) 0px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 0px, transparent 1px), linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
