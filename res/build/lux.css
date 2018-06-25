@@ -21,6 +21,8 @@ html {
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 body {
   font-size: 1em;
