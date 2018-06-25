@@ -18,6 +18,7 @@ html {
   font-size: 100%;
   line-height: 1.15;
   text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
   box-sizing: border-box;
 }
 body {
