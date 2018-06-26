@@ -317,7 +317,8 @@ button.as-display {
 .changes-background .thing {
   background: var(--display-color, #576879);
 }
-.theme-unity .row > div {
+.theme-unity .row > div,
+.with-fake-border > div {
   box-shadow: 1px 0 0 0 #fff, 0 1px 0 0 #fff, 1px 1px 0 0 #fff, 1px 0 0 0 #fff inset, 0 1px 0 0 #fff inset;
 }
 body.debug.theme-unity {
