@@ -1377,10 +1377,10 @@
   padding: 2px 8px;
   position: absolute;
   left: 0.5rem;
-  top: 0;
+  top: 0.5rem;
   white-space: nowrap;
   z-index: 20;
-  background-color: #555;
+  background-color: #0a6ba8;
   color: #fff;
   font-size: 0.8rem;
 }
