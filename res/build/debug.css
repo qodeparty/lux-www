@@ -309,23 +309,57 @@ button.as-display {
   color: #fff;
   position: relative;
   min-width: 0.625rem;
+  box-shadow: 0 0 1px 1px #576879 inset;
 }
-.theme-unity .thing.r {
+.theme-unity .r .thing {
   background: rgba(250,101,99,0.5);
 }
-.theme-unity .thing.y {
+.theme-unity .o .thing {
+  background: rgba(255,166,77,0.5);
+}
+.theme-unity .y .thing {
   background: rgba(255,224,86,0.5);
 }
-.theme-unity .thing.g {
+.theme-unity .g .thing {
+  background: rgba(148,218,135,0.5);
+}
+.theme-unity .s1 .thing {
+  background: rgba(249,100,203,0.5);
+}
+.theme-unity .s2 .thing {
+  background: rgba(250,101,99,0.5);
+}
+.theme-unity .s3 .thing {
+  background: rgba(255,166,77,0.5);
+}
+.theme-unity .s4 .thing {
+  background: rgba(255,224,86,0.5);
+}
+.theme-unity .s5 .thing {
+  background: rgba(148,218,135,0.5);
+}
+.theme-unity .s6 .thing {
   background: rgba(57,158,84,0.5);
 }
-.theme-unity .thing.p {
+.theme-unity .s7 .thing {
+  background: rgba(51,153,255,0.5);
+}
+.theme-unity .s8 .thing {
   background: rgba(104,104,220,0.5);
 }
 .theme-unity .thing.trunc {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+.theme-unity .has-fake-border .thing {
+  box-shadow: 0 0 1px 1px #fff inset;
+}
+.theme-unity .with-fake-border[class*="grid-"][class*="-flush"] > div {
+  box-shadow: none;
+}
+.theme-unity .with-fake-border[class*="grid-"][class*="-flush"] .thing {
+  box-shadow: 0 0 1px 1px #fff inset;
 }
 .changes-background .thing {
   background: var(--display-color, #576879);
