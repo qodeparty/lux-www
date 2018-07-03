@@ -271,7 +271,6 @@ button.as-display {
 }
 #annotate .has-notes {
   padding: 1rem 0;
-  margin-bottom: 1rem;
 }
 #annotate .has-notes[title]:before {
   content: attr(title);
@@ -308,7 +307,7 @@ button.as-display {
   white-space: nowrap;
   text-align: center;
   background: rgba(86,188,225,0.5);
-  padding: 2.1325rem 0;
+  padding: 1rem 0;
   border-radius: 3px;
   color: #fff;
   position: relative;
@@ -356,4 +355,17 @@ body.debug.theme-unity {
 .debug-links .curr {
   background: #56bce1;
   color: #fff;
+}
+.debug [class*="cell"]:hover:after,
+.debug .col:hover:after {
+  content: attr(class);
+  padding: 2px 8px;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  white-space: nowrap;
+  z-index: 20;
+  background-color: #94da87;
+  color: #fff;
+  font-size: 0.8rem;
 }
