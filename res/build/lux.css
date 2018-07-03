@@ -2914,6 +2914,18 @@ pre {
     max-width: 93.75%;
   }
 }
+[class*="grid-"][class*="-top"],
+[class*="cell-"][class*="-top"] {
+  align-items: flex-start;
+}
+[class*="grid-"][class*="-mid"],
+[class*="cell-"][class*="-mid"] {
+  align-items: center;
+}
+[class*="grid-"][class*="-btm"],
+[class*="cell-"][class*="-btm"] {
+  align-items: flex-end;
+}
 [class*="grid-"][class*="-nog"] {
   margin: 0;
 }
@@ -2924,18 +2936,6 @@ pre {
   margin-left: auto;
   justify-content: flex-end;
   align-self: flex-end;
-}
-[class*="grid-"][class*="-t"] {
-$grid_top
-  align-items: flex-start;
-}
-[class*="grid-"][class*="-m"] {
-$grid_mid
-  align-items: center;
-}
-[class*="grid-"][class*="-b"] {
-$grid_btm
-  align-items: flex-end;
 }
 [class*="grid-"][class*="-rev"] {
   flex-direction: row-reverse;
@@ -2948,6 +2948,12 @@ $grid_btm
 }
 [class*="grid-"][class*="-nw"] {
   flex-wrap: nowrap;
+}
+[class*="cell-"][class*="-z"] {
+  order: -1;
+}
+[class*="cell-"][class*="-n"] {
+  order: 999;
 }
 h1.is-title {
   font-size: 2.75rem;
@@ -3271,9 +3277,6 @@ button.as-display {
   background: var(--debug-color);
 }
 .theme-unity .thing {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   text-align: center;
   background: rgba(86,188,225,0.5);
   padding: 1rem 0;
@@ -3281,6 +3284,11 @@ button.as-display {
   color: #fff;
   position: relative;
   min-width: 0.625rem;
+}
+.theme-unity .thing.trunc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .changes-background .thing {
   background: var(--display-color, #576879);
