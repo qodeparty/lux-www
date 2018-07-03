@@ -133,6 +133,18 @@
   position: relative;
   min-width: 0.625rem;
 }
+.theme-unity .thing.r {
+  background: rgba(250,101,99,0.5);
+}
+.theme-unity .thing.y {
+  background: rgba(255,224,86,0.5);
+}
+.theme-unity .thing.g {
+  background: rgba(57,158,84,0.5);
+}
+.theme-unity .thing.p {
+  background: rgba(104,104,220,0.5);
+}
 .theme-unity .thing.trunc {
   text-overflow: ellipsis;
   overflow: hidden;
