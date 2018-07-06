@@ -6384,3 +6384,16 @@ body.debug.theme-unity {
   color: #fff;
   font-size: 0.8rem;
 }
+body.debug:after {
+  content: 'v0.2' '.b-' '73';
+  padding: 2px 8px;
+  position: sticky;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  white-space: nowrap;
+  z-index: 20;
+  background-color: #6868dc;
+  color: #fff;
+  font-size: 0.8rem;
+  z-index: 9999;
+}
