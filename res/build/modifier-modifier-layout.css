@@ -7,3 +7,21 @@
 .is-block {
   display: block;
 }
+[class*="_w100"] {
+  flex-basis: 100%;
+}
+[class*="_w75"] {
+  flex-basis: 75%;
+}
+[class*="_w66"] {
+  flex-basis: 66%;
+}
+[class*="_w50"] {
+  flex-basis: 50%;
+}
+[class*="_w33"] {
+  flex-basis: 33%;
+}
+[class*="_w25"] {
+  flex-basis: 25%;
+}

@@ -33,7 +33,7 @@
 .as-tiles [class*="cell-"] {
   align-items: stretch;
   min-height: min-content;
-  box-shadow: 0 0 1px 1px #efefef inset;
+  box-shadow: 0 0 1px 1px #e8e8e8 inset;
 }
 .as-tiles [class~="grid"],
 .as-tiles [class*="grid-"],
@@ -4264,11 +4264,4 @@
 [class*="grid-"][class*="-auto"] > [class*="cell-"] > *,
 [class*="grid-"][class*="-auto"] > [class*="cell_"] > * {
   height: 100%;
-}
-.debug .grids {
-  margin: 25px;
-}
-.debug .grids article {
-  border-radius: 5px;
-  color: #fff;
 }
