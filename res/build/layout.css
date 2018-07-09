@@ -208,7 +208,7 @@ button[class*="block-"][class*="-auto"] {
   flex-basis: 0;
   display: block;
 }
-.debug .blocks {
+.debug .blocks:not(.stripes5) {
   padding: 0.5rem;
   background: rgba(64,64,88,0.5);
 }
@@ -1613,8 +1613,7 @@ button[class*="block-"][class*="-auto"] {
   padding: 1rem;
   display: flex;
   flex-flow: row wrap;
-  margin: 0 -0.5rem;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 [class*="cell_"],
 [class~="cell"],
@@ -1630,6 +1629,20 @@ button[class*="block-"][class*="-auto"] {
 }
 [class*="cell-"] {
   flex: none;
+}
+.as-tiles [class~="cell"],
+.as-tiles [class*="cell-"] {
+  align-items: stretch;
+  min-height: min-content;
+  box-shadow: 0 0 1px 1px #efefef inset;
+}
+.as-tiles [class~="grid"],
+.as-tiles [class*="grid-"],
+.as-tiles [class*="grid_"] {
+  padding: 0;
+  align-items: stretch;
+  min-height: min-content;
+  border: none;
 }
 [class~="grid"][class~="cell"],
 [class~="grid"][class*="cell-"],
@@ -2001,20 +2014,20 @@ button[class*="block-"][class*="-auto"] {
   margin-left: 100%;
 }
 @media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
-  .is-block-nano {
+  .show-on-nano {
     display: block;
   }
-  .is-block-mobile,
-  .is-block-tablet,
-  .is-block-desktop,
-  .is-block-wide,
-  .is-block-full,
-  .is-block-jumbo,
-  .is-block-ultra {
+  .show-on-mobile,
+  .show-on-tablet,
+  .show-on-desktop,
+  .show-on-wide,
+  .show-on-full,
+  .show-on-jumbo,
+  .show-on-ultra {
     display: none;
   }
   .xxs-h,
-  .is-hidden-nano {
+  .hide-on-nano {
     display: none;
   }
   [class*="_xxs-1"] > [class*="cell_"],
@@ -2381,20 +2394,20 @@ button[class*="block-"][class*="-auto"] {
   }
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
-  .is-block-mobile {
+  .show-on-mobile {
     display: block;
   }
-  .is-block-tablet,
-  .is-block-desktop,
-  .is-block-wide,
-  .is-block-full,
-  .is-block-jumbo,
-  .is-block-ultra,
-  .is-block-nano {
+  .show-on-tablet,
+  .show-on-desktop,
+  .show-on-wide,
+  .show-on-full,
+  .show-on-jumbo,
+  .show-on-ultra,
+  .show-on-nano {
     display: none;
   }
   .xs-h,
-  .is-hidden-mobile {
+  .hide-on-mobile {
     display: none;
   }
   [class*="_xs-1"] > [class*="cell_"],
@@ -2761,20 +2774,20 @@ button[class*="block-"][class*="-auto"] {
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
-  .is-block-tablet {
+  .show-on-tablet {
     display: block;
   }
-  .is-block-desktop,
-  .is-block-wide,
-  .is-block-full,
-  .is-block-jumbo,
-  .is-block-ultra,
-  .is-block-nano,
-  .is-block-mobile {
+  .show-on-desktop,
+  .show-on-wide,
+  .show-on-full,
+  .show-on-jumbo,
+  .show-on-ultra,
+  .show-on-nano,
+  .show-on-mobile {
     display: none;
   }
   .sm-h,
-  .is-hidden-tablet {
+  .hide-on-tablet {
     display: none;
   }
   [class*="_sm-1"] > [class*="cell_"],
@@ -3141,20 +3154,20 @@ button[class*="block-"][class*="-auto"] {
   }
 }
 @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
-  .is-block-desktop {
+  .show-on-desktop {
     display: block;
   }
-  .is-block-wide,
-  .is-block-full,
-  .is-block-jumbo,
-  .is-block-ultra,
-  .is-block-nano,
-  .is-block-mobile,
-  .is-block-tablet {
+  .show-on-wide,
+  .show-on-full,
+  .show-on-jumbo,
+  .show-on-ultra,
+  .show-on-nano,
+  .show-on-mobile,
+  .show-on-tablet {
     display: none;
   }
   .md-h,
-  .is-hidden-desktop {
+  .hide-on-desktop {
     display: none;
   }
   [class*="_md-1"] > [class*="cell_"],
@@ -3521,20 +3534,20 @@ button[class*="block-"][class*="-auto"] {
   }
 }
 @media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
-  .is-block-wide {
+  .show-on-wide {
     display: block;
   }
-  .is-block-full,
-  .is-block-jumbo,
-  .is-block-ultra,
-  .is-block-nano,
-  .is-block-mobile,
-  .is-block-tablet,
-  .is-block-desktop {
+  .show-on-full,
+  .show-on-jumbo,
+  .show-on-ultra,
+  .show-on-nano,
+  .show-on-mobile,
+  .show-on-tablet,
+  .show-on-desktop {
     display: none;
   }
   .lg-h,
-  .is-hidden-wide {
+  .hide-on-wide {
     display: none;
   }
   [class*="_lg-1"] > [class*="cell_"],
@@ -3901,20 +3914,20 @@ button[class*="block-"][class*="-auto"] {
   }
 }
 @media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
-  .is-block-full {
+  .show-on-full {
     display: block;
   }
-  .is-block-jumbo,
-  .is-block-ultra,
-  .is-block-nano,
-  .is-block-mobile,
-  .is-block-tablet,
-  .is-block-desktop,
-  .is-block-wide {
+  .show-on-jumbo,
+  .show-on-ultra,
+  .show-on-nano,
+  .show-on-mobile,
+  .show-on-tablet,
+  .show-on-desktop,
+  .show-on-wide {
     display: none;
   }
   .xl-h,
-  .is-hidden-full {
+  .hide-on-full {
     display: none;
   }
   [class*="_xl-1"] > [class*="cell_"],
@@ -4281,20 +4294,20 @@ button[class*="block-"][class*="-auto"] {
   }
 }
 @media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
-  .is-block-jumbo {
+  .show-on-jumbo {
     display: block;
   }
-  .is-block-ultra,
-  .is-block-nano,
-  .is-block-mobile,
-  .is-block-tablet,
-  .is-block-desktop,
-  .is-block-wide,
-  .is-block-full {
+  .show-on-ultra,
+  .show-on-nano,
+  .show-on-mobile,
+  .show-on-tablet,
+  .show-on-desktop,
+  .show-on-wide,
+  .show-on-full {
     display: none;
   }
   .xxl-h,
-  .is-hidden-jumbo {
+  .hide-on-jumbo {
     display: none;
   }
   [class*="_xxl-1"] > [class*="cell_"],
@@ -4661,20 +4674,20 @@ button[class*="block-"][class*="-auto"] {
   }
 }
 @media screen and (min-width: 160rem) {
-  .is-block-ultra {
+  .show-on-ultra {
     display: block;
   }
-  .is-block-nano,
-  .is-block-mobile,
-  .is-block-tablet,
-  .is-block-desktop,
-  .is-block-wide,
-  .is-block-full,
-  .is-block-jumbo {
+  .show-on-nano,
+  .show-on-mobile,
+  .show-on-tablet,
+  .show-on-desktop,
+  .show-on-wide,
+  .show-on-full,
+  .show-on-jumbo {
     display: none;
   }
   .xxx-h,
-  .is-hidden-ultra {
+  .hide-on-ultra {
     display: none;
   }
   [class*="_xxx-1"] > [class*="cell_"],
@@ -5408,6 +5421,17 @@ button[class*="block-"][class*="-auto"] {
     margin-left: 100%;
   }
 }
+@media screen and (max-width: 47.9375rem) {
+  .is-responsive [class~="grid"],
+  .is-responsive [class~="cell"],
+  .is-responsive [class*="grid-"],
+  .is-responsive [class*="cell-"] {
+    flex-direction: column;
+    flex: none;
+    flex-basis: 0;
+    max-width: 100% !important;
+  }
+}
 @media screen and (min-width: 64rem) {
   .desk-h,
   .is-hidden-desk {
@@ -5842,7 +5866,14 @@ button[class*="block-"][class*="-auto"] {
 [class*="grid-"][class*="-auto"] > [class*="cell_"] > * {
   height: 100%;
 }
-.debug .basis:after {
+.debug .grids {
+  margin: 25px;
+}
+.debug .grids article {
+  border-radius: 5px;
+  color: #fff;
+}
+.basis:after {
   content: '16';
   text-decoration-line: none;
 }
