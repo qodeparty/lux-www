@@ -230,13 +230,13 @@ button.as-display {
 }
 #annotate .notes,
 #annotate .note,
-#annotate .title {
+#annotate .notes span.title {
   font-family: sans-serif;
   color: var(--debug-color);
   font-size: 9px;
   padding: 10px;
 }
-#annotate .title {
+#annotate .notes span.title {
   text-transform: uppercase;
 }
 #annotate .code {
@@ -311,17 +311,29 @@ button.as-display {
   min-width: 0.625rem;
   box-shadow: 0 0 1px 1px #576879 inset;
 }
+.theme-unity .r,
 .theme-unity .r .thing {
-  background: rgba(250,101,99,0.5);
+  background: rgba(250,101,99,0.5) !important;
 }
+.theme-unity .o,
 .theme-unity .o .thing {
-  background: rgba(255,166,77,0.5);
+  background: rgba(255,166,77,0.5) !important;
 }
+.theme-unity .y,
 .theme-unity .y .thing {
-  background: rgba(255,224,86,0.5);
+  background: rgba(255,224,86,0.5) !important;
 }
+.theme-unity .g,
 .theme-unity .g .thing {
-  background: rgba(148,218,135,0.5);
+  background: rgba(148,218,135,0.5) !important;
+}
+.theme-unity .b,
+.theme-unity .b .thing {
+  background: rgba(51,153,255,0.5) !important;
+}
+.theme-unity .v,
+.theme-unity .v .thing {
+  background: rgba(104,104,220,0.5) !important;
 }
 .theme-unity .s1 .thing {
   background: rgba(249,100,203,0.5);
@@ -419,7 +431,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.2.r-77 (16)';
+  content: 'v0.3.r-78 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;

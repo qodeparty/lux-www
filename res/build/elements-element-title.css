@@ -1,3 +1,45 @@
+.title.is-size-000 {
+  font-size: 0.25rem;
+}
+.title.is-size-00 {
+  font-size: 0.5rem;
+}
+.title.is-size-0 {
+  font-size: 0.75rem;
+}
+.title.is-size-1 {
+  font-size: 1rem;
+}
+.title.is-size-2 {
+  font-size: 1.25rem;
+}
+.title.is-size-3 {
+  font-size: 1.5rem;
+}
+.title.is-size-4 {
+  font-size: 1.75rem;
+}
+.title.is-size-5 {
+  font-size: 2rem;
+}
+.title.is-size-6 {
+  font-size: 2.25rem;
+}
+.title.is-size-7 {
+  font-size: 2.5rem;
+}
+.title.is-size-8 {
+  font-size: 2.75rem;
+}
+.title.is-size-9 {
+  font-size: 3rem;
+}
+.title.is-size-99 {
+  font-size: 3.25rem;
+}
+.title.is-size-999 {
+  font-size: 3.5rem;
+}
 h1.is-title {
   font-size: 2.75rem;
 }

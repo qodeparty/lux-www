@@ -91,6 +91,26 @@ button[class*="block-"][class*="-auto"] {
 .is-centered {
   text-align: center !important;
 }
+.is-vertical {
+  flex-direction: column;
+}
+.as-tiles [class*="block-"],
+.as-tiles .block,
+.as-tiles .block-item {
+  align-items: stretch;
+  min-height: min-content;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  display: block;
+  border-radius: 5px;
+}
+.as-tiles .block:not(.is-child) {
+  display: flex;
+}
+.as-tiles article {
+  padding: 2rem 1.25rem !important;
+}
 /* //////////////////////////////////////////////////////////////////////////////
 // DEBUG ME
 ////////////////////////////////////////////////////////////////////////////// */
@@ -103,10 +123,13 @@ button[class*="block-"][class*="-auto"] {
   background: #fff;
   color: #000;
 }
-.debug [class*="block-"]:not(.block-spacer):not(input):not(textarea) {
-  background: rgba(86,188,225,0.3);
+.debug [class*="block-"]:not(.block-spacer):not(input):not(textarea),
+.debug [class*="block-"]:not(.block-spacer) {
   padding: 1rem;
   border-radius: 3px;
   color: #fff;
   box-shadow: 0 0 1px 1px #efefef inset;
+}
+.debug [class*="block-"]:not(.block-spacer):not(input):not(textarea) {
+  background: rgba(86,188,225,0.3);
 }
