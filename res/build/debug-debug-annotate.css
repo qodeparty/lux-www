@@ -1,5 +1,5 @@
 #annotate {
-  margin-top: 4.5rem;
+  margin-top: 3.9375rem;
 }
 #annotate #inline div {
   color: #bbb;
@@ -227,21 +227,22 @@ body.debug.theme-unity {
   background: #56bce1;
   color: #fff;
 }
+.debug [class*="grid"]:not(.grids):hover:after,
 .debug [class*="cell"]:hover:after,
 .debug .col:hover:after {
   content: attr(class);
   padding: 2px 8px;
   position: absolute;
   left: 0.5rem;
-  top: 0.5rem;
+  top: 1rem;
   white-space: nowrap;
   z-index: 20;
-  background-color: #94da87;
+  background-color: #1c1d24;
   color: #fff;
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.2.r-76';
+  content: 'v0.2.r-77 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;

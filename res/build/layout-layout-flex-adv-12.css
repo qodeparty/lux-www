@@ -13,6 +13,7 @@
   flex-flow: row wrap;
   margin: 0 -0.5rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 [class*="cell_"],
 [class~="cell"],
@@ -3271,8 +3272,4 @@
 [class*="grid-"][class*="-auto"] > [class*="cell-"] > *,
 [class*="grid-"][class*="-auto"] > [class*="cell_"] > * {
   height: 100%;
-}
-.debug .basis:after {
-  content: '12';
-  text-decoration-line: none;
 }

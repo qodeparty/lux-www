@@ -1,6 +1,112 @@
 /* //////////////////////////////////////////////////////////////////////////////
 // Includes
 ////////////////////////////////////////////////////////////////////////////// */
+.wrapper,
+.blocks {
+  position: relative;
+}
+.with-gaps [class*="block-"][class*="-rt"] {
+  margin-left: 0.25rem;
+}
+.with-gaps [class*="block-"][class*="-lt"] {
+  margin-right: 0.25rem;
+}
+.with-gaps [class*="block-"]$cl_attr_ctr {
+  margin: 0 0.25rem;
+}
+.with-gaps .block {
+  margin: 0.25rem 0;
+}
+.block {
+  display: flex /* display block on non-mobile */;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+[class*="block-"][class*="-rt"],
+[class*="block-"][class*="-lt"],
+[class*="block-"][class*="-ctr"],
+[class*="block-"][class*="-item"],
+[class*="block-"][class*="-auto"] {
+  display: flex;
+  align-items: center;
+  flex-basis: auto;
+  flex-shrink: 0;
+}
+[class*="block-"][class*="-rt"] {
+  justify-content: flex-end;
+  flex-grow: 0;
+}
+[class*="block-"][class*="-lt"] {
+  justify-content: flex-start;
+  flex-grow: 0;
+}
+[class*="block-"][class*="-ctr"] {
+  justify-content: center;
+  flex-grow: 1;
+}
+[class*="block-"][class*="-item"] {
+  justify-content: center;
+  flex-grow: 1 /* only on media screen 768+ */;
+}
+[class*="block-"][class*="-auto"] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 3.125rem;
+  padding: 2px;
+}
+button[class*="block-"][class*="-auto"] {
+  display: block;
+  margin: 0 auto;
+}
+.block-spacer {
+  display: block;
+  background: transparent;
+  height: 0.25rem;
+}
+@media screen and (max-width: 47.9375rem) {
+  .block,
+  [class*="block-"]:not(.block-spacer) {
+    display: block;
+  }
+  .block-item {
+    flex-grow: 0;
+  }
+  .block-item input {
+    max-width: 100%;
+  }
+  [class*="block-"][class*="-auto"] {
+    width: 100%;
+  }
+  .blocks.with-gaps [class*="block-"] {
+    margin: 0 0;
+    margin: 0.25rem 0;
+  }
+  button[class*="block-"][class*="-auto"] {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.is-centered {
+  text-align: center !important;
+}
+.debug .blocks {
+  padding: 0.5rem;
+  background: rgba(64,64,88,0.5);
+}
+.debug input[class*="block-"],
+.debug textarea[class*="block-"] {
+  background: #fff;
+  color: #000;
+}
+.debug [class*="block-"]:not(.block-spacer):not(input):not(textarea) {
+  background: rgba(86,188,225,0.3);
+  padding: 1rem;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: 0 0 1px 1px #efefef inset;
+}
 .row {
   display: flex;
   position: relative;
@@ -1379,6 +1485,7 @@
 [class~="grid"],
 [class*="grid-"],
 [class*="grid_"] {
+  position: relative;
   border: 1px dotted #f00;
   padding: 1rem;
   display: flex;

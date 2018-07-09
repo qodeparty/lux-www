@@ -16,7 +16,7 @@ body {
   padding: 0;
 }
 html {
-  font-size: 100%;
+  font-size: '100%';
   line-height: 1.15;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
@@ -26,7 +26,7 @@ html {
 }
 body {
   font-size: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial, Helvetica, sans-serif';
 }
 canvas,
 article,
@@ -104,7 +104,7 @@ legend,
 label,
 optgroup,
 textarea {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial, Helvetica, sans-serif';
   font-size: inherit;
   line-height: inherit;
 }
@@ -5947,6 +5947,10 @@ pre {
 [class*="grid-"][class*="-auto"] > [class*="cell_"] > * {
   height: 100%;
 }
+.debug .basis:after {
+  content: '16';
+  text-decoration-line: none;
+}
 h1.is-title {
   font-size: 2.75rem;
 }
@@ -6371,6 +6375,7 @@ body.debug.theme-unity {
   background: #56bce1;
   color: #fff;
 }
+.debug [class*="grid"]:hover:after,
 .debug [class*="cell"]:hover:after,
 .debug .col:hover:after {
   content: attr(class);
@@ -6385,7 +6390,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.2.r-75 b-16';
+  content: 'v0.2.r-77';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
@@ -6396,8 +6401,4 @@ body.debug:after {
   color: #fff;
   font-size: 0.8rem;
   z-index: 9999;
-}
-.debug .basis:after {
-  content: '16';
-  text-decoration-line: none;
 }
