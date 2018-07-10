@@ -213,7 +213,11 @@ button[class*="block-"][class*="-auto"] {
 .is-centered {
   text-align: center !important;
 }
-.as-tiles [class*="block-"],
+.as-tiles .block-lt,
+.as-tiles .block-rt,
+.as-tiles .block-ctr,
+.as-tiles .block-vert,
+.as-tiles .block-auto,
 .as-tiles .block,
 .as-tiles .block-item {
   align-items: stretch;

@@ -125,7 +125,9 @@
   background: var(--display-color, #576879);
 }
 .archxray .row > div,
-.debug .with-fake-border > div {
+.debug .with-fake-border [class*="cell-"],
+.debug .with-fake-border [class*="cell_"],
+.debug .with-fake-border .cell {
   box-shadow: 1px 0 0 0 #fff, 0 1px 0 0 #fff, 1px 1px 0 0 #fff, 1px 0 0 0 #fff inset, 0 1px 0 0 #fff inset;
 }
 /* //////////////////////////////////////////////////////////////////////////////
@@ -139,19 +141,29 @@
   color: #fff;
 }
 /* //////////////////////////////////////////////////////////////////////////////
+// DEBUG Container
+////////////////////////////////////////////////////////////////////////////// */
+.archxray .container,
+.archxray .container-fixed {
+  background: rgba(232,232,232,0.3) !important;
+  border: 2px dashed #e8e8e8 !important;
+  color: #e8e8e8 !important;
+  margin-bottom: 1rem;
+}
+/* //////////////////////////////////////////////////////////////////////////////
 // DEBUG BLOCK
 ////////////////////////////////////////////////////////////////////////////// */
 .archxray .blocks:not(.stripes5) {
-  padding: 0.5rem;
-  background: rgba(64,64,88,0.5);
+  display: block;
+  padding: 2rem;
+  margin: 1rem;
 }
 .archxray input[class*="block-"],
 .archxray textarea[class*="block-"] {
   background: #fff;
   color: #000 !important;
 }
-.archxray .xray-blocks [class*="block-"]:not(input):not(textarea):not(.block-spacer):not(.block-breaker),
-.archxray .xray-blocks [class*="block-"] {
+.archxray .xray-blocks [class*="block-"]:not(input):not(textarea):not(.block-spacer):not(.block-breaker) {
   padding: 1rem;
   border-radius: 5px;
   color: #fff;
@@ -194,4 +206,9 @@
 }
 .archxray .xray-blocks .block-vspacer:after {
   content: 'VSP';
+}
+.archxray .xray-blocks .blocks {
+  background: rgba(232,232,232,0.5) !important;
+  border: 2px dashed #e8e8e8 !important;
+  color: #e8e8e8 !important;
 }

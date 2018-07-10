@@ -14,6 +14,12 @@
 /* //////////////////////////////////////////////////////////////////////////////
 // Media!
 ///////////////////////////////////////////////////////////////////////////// */
+body.debug {
+  background: #0a6ba8;
+  --debug-color: #55bced;
+  --box-shadow-color: #55bced;
+  --display-color: #fa6563;
+}
 button.as-display {
   border: 1px solid #ccc;
   font-family: sans-serif;
@@ -25,7 +31,7 @@ button.as-display {
   height: 30px;
 }
 @media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #0c4e7a;
     --box-shadow-color: #55bced;
     --debug-color: #55bced;
@@ -42,7 +48,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #0a6ba8;
     --debug-color: #55bced;
     --box-shadow-color: #55bced;
@@ -62,7 +68,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #147bbc;
     --debug-color: #94d8ed;
     --box-shadow-color: #94d8ed;
@@ -82,7 +88,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #28a9e1;
     --debug-color: #c1e4ef;
     --box-shadow-color: #c1e4ef;
@@ -102,7 +108,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #55bced;
     --debug-color: #0a6ba8;
     --box-shadow-color: #0a6ba8;
@@ -119,7 +125,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #94d8ed;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
@@ -139,7 +145,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #c1e4ef;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
@@ -165,7 +171,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 160rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #cbeaf3;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;

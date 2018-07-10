@@ -8,6 +8,12 @@
   background: linear-gradient(90deg, #fff 319px, #94d8ed 0, #94d8ed 320px, #fff 0, #fff 374px, #94d8ed 0, #94d8ed 375px, #fff 0, #fff 424px, #94d8ed 0, #94d8ed 425px, #fff 0, #fff 767px, #94d8ed 0, #94d8ed 768px, #fff 0, #fff 1023px, #94d8ed 0, #94d8ed 1024px, #fff 0, #fff 1215px, #94d8ed 0, #94d8ed 1216px, #fff 0, #fff 1439px, #94d8ed 0, #94d8ed 1440px, #fff 0, #fff 1919px, #94d8ed 0, #94d8ed 1920px, #fff 0, #fff 2559px, #94d8ed 0, #94d8ed 2560px, #fff 0);
   background-position: 0;
 }
+body.debug {
+  background: #0a6ba8;
+  --debug-color: #55bced;
+  --box-shadow-color: #55bced;
+  --display-color: #fa6563;
+}
 button.as-display {
   border: 1px solid #ccc;
   font-family: sans-serif;
@@ -19,7 +25,7 @@ button.as-display {
   height: 30px;
 }
 @media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #0c4e7a;
     --box-shadow-color: #55bced;
     --debug-color: #55bced;
@@ -36,7 +42,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #0a6ba8;
     --debug-color: #55bced;
     --box-shadow-color: #55bced;
@@ -56,7 +62,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #147bbc;
     --debug-color: #94d8ed;
     --box-shadow-color: #94d8ed;
@@ -76,7 +82,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #28a9e1;
     --debug-color: #c1e4ef;
     --box-shadow-color: #c1e4ef;
@@ -96,7 +102,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #55bced;
     --debug-color: #0a6ba8;
     --box-shadow-color: #0a6ba8;
@@ -113,7 +119,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #94d8ed;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
@@ -133,7 +139,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #c1e4ef;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
@@ -159,7 +165,7 @@ button.as-display {
   }
 }
 @media screen and (min-width: 160rem) {
-  body.debug {
+  body.debug.changes-bg {
     background: #cbeaf3;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
@@ -346,7 +352,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.3.r-81 (16)';
+  content: 'v0.3.r-82 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
@@ -504,7 +510,9 @@ body.debug:after {
   background: var(--display-color, #576879);
 }
 .archxray .row > div,
-.debug .with-fake-border > div {
+.debug .with-fake-border [class*="cell-"],
+.debug .with-fake-border [class*="cell_"],
+.debug .with-fake-border .cell {
   box-shadow: 1px 0 0 0 #fff, 0 1px 0 0 #fff, 1px 1px 0 0 #fff, 1px 0 0 0 #fff inset, 0 1px 0 0 #fff inset;
 }
 .archxray .grids {
@@ -514,17 +522,24 @@ body.debug:after {
   border-radius: 5px;
   color: #fff;
 }
+.archxray .container,
+.archxray .container-fixed {
+  background: rgba(232,232,232,0.3) !important;
+  border: 2px dashed #e8e8e8 !important;
+  color: #e8e8e8 !important;
+  margin-bottom: 1rem;
+}
 .archxray .blocks:not(.stripes5) {
-  padding: 0.5rem;
-  background: rgba(64,64,88,0.5);
+  display: block;
+  padding: 2rem;
+  margin: 1rem;
 }
 .archxray input[class*="block-"],
 .archxray textarea[class*="block-"] {
   background: #fff;
   color: #000 !important;
 }
-.archxray .xray-blocks [class*="block-"]:not(input):not(textarea):not(.block-spacer):not(.block-breaker),
-.archxray .xray-blocks [class*="block-"] {
+.archxray .xray-blocks [class*="block-"]:not(input):not(textarea):not(.block-spacer):not(.block-breaker) {
   padding: 1rem;
   border-radius: 5px;
   color: #fff;
@@ -567,4 +582,9 @@ body.debug:after {
 }
 .archxray .xray-blocks .block-vspacer:after {
   content: 'VSP';
+}
+.archxray .xray-blocks .blocks {
+  background: rgba(232,232,232,0.5) !important;
+  border: 2px dashed #e8e8e8 !important;
+  color: #e8e8e8 !important;
 }

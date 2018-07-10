@@ -23,10 +23,88 @@ h6.is-title {
   margin: 0 auto;
   position: relative;
 }
-@media screen and (min-width: 64rem) {
-  .container.is-desktop {
+.container-fixed:after,
+.container:after {
+  content: attr(max-width);
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  background: #94da87;
+}
+@media screen and (max-width: 47.9375rem) {
+  .container-fixed {
     margin: 0 auto;
     position: relative;
+    width: 22.4375rem;
+    max-width: 22.4375rem;
+  }
+  .container-fixed:after {
+    content: 'mobile 22.4375rem';
+  }
+}
+@media screen and (min-width: 48rem) {
+  .container-fixed {
+    margin: 0 auto;
+    position: relative;
+    width: 48rem;
+    max-width: 48rem;
+  }
+  .container-fixed:after {
+    content: 'tablet 48rem';
+  }
+}
+@media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
+  .container-fixed {
+    margin: 0 auto;
+    position: relative;
+    width: 64rem;
     max-width: 64rem;
+  }
+  .container-fixed:after {
+    content: 'desktop 64rem';
+  }
+}
+@media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
+  .container-fixed {
+    margin: 0 auto;
+    position: relative;
+    width: 75rem;
+    max-width: 75rem;
+  }
+  .container-fixed:after {
+    content: 'wide 75rem';
+  }
+}
+@media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
+  .container-fixed {
+    margin: 0 auto;
+    position: relative;
+    width: 89.9375rem;
+    max-width: 89.9375rem;
+  }
+  .container-fixed:after {
+    content: 'full 89.9375rem';
+  }
+}
+@media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
+  .container-fixed {
+    margin: 0 auto;
+    position: relative;
+    width: 119.9375rem;
+    max-width: 119.9375rem;
+  }
+  .container-fixed:after {
+    content: 'wide 119.9375rem';
+  }
+}
+@media screen and (min-width: 160rem) {
+  .container-fixed {
+    margin: 0 auto;
+    position: relative;
+    width: 160rem;
+    max-width: 160rem;
+  }
+  .container-fixed:after {
+    content: 'ultra 160rem';
   }
 }
