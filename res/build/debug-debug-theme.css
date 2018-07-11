@@ -115,28 +115,33 @@
 .archxray .has-fake-border .thing {
   box-shadow: 0 0 1px 1px #fff inset;
 }
-.archxray .with-fake-border[class*="grid-"][class*="-flush"] > div {
+.archxray .with-fake-border[class*="cell-"][class*="-flush"] > div {
   box-shadow: none;
 }
-.archxray .with-fake-border[class*="grid-"][class*="-flush"] .thing {
+.archxray .with-fake-border[class*="cell-"][class*="-flush"] .thing {
   box-shadow: 0 0 1px 1px #fff inset;
 }
 .archxray .changes-background .thing {
   background: var(--display-color, #576879);
 }
 .archxray .row > div,
-.debug .with-fake-border [class*="cell-"],
-.debug .with-fake-border [class*="cell_"],
-.debug .with-fake-border .cell {
+.debug .with-fake-border [class*="slot-"],
+.debug .with-fake-border [class*="slot_"],
+.debug .with-fake-border .slot {
   box-shadow: 1px 0 0 0 #fff, 0 1px 0 0 #fff, 1px 1px 0 0 #fff, 1px 0 0 0 #fff inset, 0 1px 0 0 #fff inset;
 }
+.cell.with-fake-border,
+[class*="cell-"].with-fake-border {
+  padding: 1rem;
+  border: 1px dotted #f00;
+}
 /* //////////////////////////////////////////////////////////////////////////////
-// DEBUG GRIDS
+// DEBUG CELLS
 ////////////////////////////////////////////////////////////////////////////// */
-.archxray .grids {
+.archxray .cells {
   margin: 25px;
 }
-.archxray .grids article {
+.archxray .cells article {
   border-radius: 5px;
   color: #fff;
 }

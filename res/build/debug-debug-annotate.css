@@ -154,8 +154,7 @@ body.debug.theme-unity {
   background: #56bce1;
   color: #fff;
 }
-.debug [class*="grid"]:not(.grids):not(.truegrid):hover:after,
-.debug [class*="cell"]:hover:after,
+.debug [class*="cell"]:not(.cells):not(.truegrid):hover:after,
 .debug .col:hover:after {
   content: attr(class);
   padding: 2px 8px;
@@ -169,7 +168,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.4.r-92 (16)';
+  content: 'v0.4.r-93 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
