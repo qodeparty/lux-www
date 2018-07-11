@@ -30,23 +30,7 @@ button.as-display {
   color: #fff;
   height: 30px;
 }
-@media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
-  body.debug.changes-bg {
-    background: #0c4e7a;
-    --box-shadow-color: #55bced;
-    --debug-color: #55bced;
-    --display-color: #f964cb;
-  }
-  .as-display.is-nano {
-    display: block;
-    background: #f964cb;
-    color: #0c4e7a;
-  }
-  .row > .nano-with-span-2 {
-    flex: none;
-    width: 25%;
-  }
-}
+/*nano disabled*/
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   body.debug.changes-bg {
     background: #0a6ba8;

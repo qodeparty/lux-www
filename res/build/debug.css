@@ -24,23 +24,6 @@ button.as-display {
   color: #fff;
   height: 30px;
 }
-@media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
-  body.debug.changes-bg {
-    background: #0c4e7a;
-    --box-shadow-color: #55bced;
-    --debug-color: #55bced;
-    --display-color: #f964cb;
-  }
-  .as-display.is-nano {
-    display: block;
-    background: #f964cb;
-    color: #0c4e7a;
-  }
-  .row > .nano-with-span-2 {
-    flex: none;
-    width: 25%;
-  }
-}
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   body.debug.changes-bg {
     background: #0a6ba8;
@@ -337,7 +320,7 @@ body.debug.theme-unity {
   background: #56bce1;
   color: #fff;
 }
-.debug [class*="grid"]:not(.grids):hover:after,
+.debug [class*="grid"]:not(.grids):not(.truegrid):hover:after,
 .debug [class*="cell"]:hover:after,
 .debug .col:hover:after {
   content: attr(class);
@@ -352,7 +335,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.3.r-82 (16)';
+  content: 'v0.3.r-88 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;

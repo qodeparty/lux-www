@@ -40,50 +40,7 @@
 .is-size-999 {
   font-size: 3.5rem;
 }
-@media screen and (max-width: 22.4375rem) {
-  .is-size-000-nano {
-    font-size: 0.25rem;
-  }
-  .is-size-00-nano {
-    font-size: 0.5rem;
-  }
-  .is-size-0-nano {
-    font-size: 0.75rem;
-  }
-  .is-size-1-nano {
-    font-size: 1rem;
-  }
-  .is-size-2-nano {
-    font-size: 1.25rem;
-  }
-  .is-size-3-nano {
-    font-size: 1.5rem;
-  }
-  .is-size-4-nano {
-    font-size: 1.75rem;
-  }
-  .is-size-5-nano {
-    font-size: 2rem;
-  }
-  .is-size-6-nano {
-    font-size: 2.25rem;
-  }
-  .is-size-7-nano {
-    font-size: 2.5rem;
-  }
-  .is-size-8-nano {
-    font-size: 2.75rem;
-  }
-  .is-size-9-nano {
-    font-size: 3rem;
-  }
-  .is-size-99-nano {
-    font-size: 3.25rem;
-  }
-  .is-size-999-nano {
-    font-size: 3.5rem;
-  }
-}
+/*nano disabled*/
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   .is-size-000-mobile {
     font-size: 0.25rem;
