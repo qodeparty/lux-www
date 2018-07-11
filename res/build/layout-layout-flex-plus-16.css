@@ -1,0 +1,306 @@
+.grids {
+  position: relative;
+}
+[class~="grid"],
+[class*="grid-"],
+[class*="grid_"] {
+  position: relative;
+  border: 1px dotted #f00;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+[class*="cell_"],
+[class~="cell"],
+[class*="cell-"] {
+  padding: 0.5rem;
+  max-width: 100%;
+  cursor: help;
+  position: relative;
+}
+[class*="cell_"],
+[class~="cell"] {
+  flex: 1 1 0%;
+}
+[class*="cell-"] {
+  flex: none;
+}
+/************************************************************/
+[class*="rt-"] {
+  margin-right: calc( var(--pull-index, 1) * 6.25%);
+}
+[class*="lt-"] {
+  margin-left: calc( var(--push-index, 1) * 6.25%);
+}
+[class~="cell"],
+[class*="cell_"] {
+  flex-basis: calc(100 / var(--flex-index, 1));
+  max-width: calc(100 / var(--flex-index, 1));
+}
+[class*="cell-"] {
+  flex-basis: calc( var(--flex-index, 1) * 6.25%);
+  max-width: calc( var(--flex-index, 1) * 6.25%);
+}
+[class*="rt-0"] {
+  --pull-index: 0;
+}
+[class*="lt-0"] {
+  --push-index: 0;
+}
+[class*="grid-1"] > [class*="cell_"],
+[class*="grid-1"] > [class*="cell-"],
+[class*="grid-1"] > [class~="cell"] {
+  --flex-index: 16;
+}
+[class~="grid"] > [class*="cell-1"],
+[class*="grid-"] > [class*="cell-1"],
+[class*="grid_"] > [class*="cell-1"] {
+  --flex-index: 1;
+}
+[class*="rt-1"] {
+  --pull-index: 1;
+}
+[class*="lt-1"] {
+  --push-index: 1;
+}
+[class*="grid-2"] > [class*="cell_"],
+[class*="grid-2"] > [class*="cell-"],
+[class*="grid-2"] > [class~="cell"] {
+  --flex-index: 15;
+}
+[class~="grid"] > [class*="cell-2"],
+[class*="grid-"] > [class*="cell-2"],
+[class*="grid_"] > [class*="cell-2"] {
+  --flex-index: 2;
+}
+[class*="rt-2"] {
+  --pull-index: 2;
+}
+[class*="lt-2"] {
+  --push-index: 2;
+}
+[class*="grid-3"] > [class*="cell_"],
+[class*="grid-3"] > [class*="cell-"],
+[class*="grid-3"] > [class~="cell"] {
+  --flex-index: 14;
+}
+[class~="grid"] > [class*="cell-3"],
+[class*="grid-"] > [class*="cell-3"],
+[class*="grid_"] > [class*="cell-3"] {
+  --flex-index: 3;
+}
+[class*="rt-3"] {
+  --pull-index: 3;
+}
+[class*="lt-3"] {
+  --push-index: 3;
+}
+[class*="grid-4"] > [class*="cell_"],
+[class*="grid-4"] > [class*="cell-"],
+[class*="grid-4"] > [class~="cell"] {
+  --flex-index: 13;
+}
+[class~="grid"] > [class*="cell-4"],
+[class*="grid-"] > [class*="cell-4"],
+[class*="grid_"] > [class*="cell-4"] {
+  --flex-index: 4;
+}
+[class*="rt-4"] {
+  --pull-index: 4;
+}
+[class*="lt-4"] {
+  --push-index: 4;
+}
+[class*="grid-5"] > [class*="cell_"],
+[class*="grid-5"] > [class*="cell-"],
+[class*="grid-5"] > [class~="cell"] {
+  --flex-index: 12;
+}
+[class~="grid"] > [class*="cell-5"],
+[class*="grid-"] > [class*="cell-5"],
+[class*="grid_"] > [class*="cell-5"] {
+  --flex-index: 5;
+}
+[class*="rt-5"] {
+  --pull-index: 5;
+}
+[class*="lt-5"] {
+  --push-index: 5;
+}
+[class*="grid-6"] > [class*="cell_"],
+[class*="grid-6"] > [class*="cell-"],
+[class*="grid-6"] > [class~="cell"] {
+  --flex-index: 11;
+}
+[class~="grid"] > [class*="cell-6"],
+[class*="grid-"] > [class*="cell-6"],
+[class*="grid_"] > [class*="cell-6"] {
+  --flex-index: 6;
+}
+[class*="rt-6"] {
+  --pull-index: 6;
+}
+[class*="lt-6"] {
+  --push-index: 6;
+}
+[class*="grid-7"] > [class*="cell_"],
+[class*="grid-7"] > [class*="cell-"],
+[class*="grid-7"] > [class~="cell"] {
+  --flex-index: 10;
+}
+[class~="grid"] > [class*="cell-7"],
+[class*="grid-"] > [class*="cell-7"],
+[class*="grid_"] > [class*="cell-7"] {
+  --flex-index: 7;
+}
+[class*="rt-7"] {
+  --pull-index: 7;
+}
+[class*="lt-7"] {
+  --push-index: 7;
+}
+[class*="grid-8"] > [class*="cell_"],
+[class*="grid-8"] > [class*="cell-"],
+[class*="grid-8"] > [class~="cell"] {
+  --flex-index: 9;
+}
+[class~="grid"] > [class*="cell-8"],
+[class*="grid-"] > [class*="cell-8"],
+[class*="grid_"] > [class*="cell-8"] {
+  --flex-index: 8;
+}
+[class*="rt-8"] {
+  --pull-index: 8;
+}
+[class*="lt-8"] {
+  --push-index: 8;
+}
+[class*="grid-9"] > [class*="cell_"],
+[class*="grid-9"] > [class*="cell-"],
+[class*="grid-9"] > [class~="cell"] {
+  --flex-index: 8;
+}
+[class~="grid"] > [class*="cell-9"],
+[class*="grid-"] > [class*="cell-9"],
+[class*="grid_"] > [class*="cell-9"] {
+  --flex-index: 9;
+}
+[class*="rt-9"] {
+  --pull-index: 9;
+}
+[class*="lt-9"] {
+  --push-index: 9;
+}
+[class*="grid-10"] > [class*="cell_"],
+[class*="grid-10"] > [class*="cell-"],
+[class*="grid-10"] > [class~="cell"] {
+  --flex-index: 7;
+}
+[class~="grid"] > [class*="cell-10"],
+[class*="grid-"] > [class*="cell-10"],
+[class*="grid_"] > [class*="cell-10"] {
+  --flex-index: 10;
+}
+[class*="rt-10"] {
+  --pull-index: 10;
+}
+[class*="lt-10"] {
+  --push-index: 10;
+}
+[class*="grid-11"] > [class*="cell_"],
+[class*="grid-11"] > [class*="cell-"],
+[class*="grid-11"] > [class~="cell"] {
+  --flex-index: 6;
+}
+[class~="grid"] > [class*="cell-11"],
+[class*="grid-"] > [class*="cell-11"],
+[class*="grid_"] > [class*="cell-11"] {
+  --flex-index: 11;
+}
+[class*="rt-11"] {
+  --pull-index: 11;
+}
+[class*="lt-11"] {
+  --push-index: 11;
+}
+[class*="grid-12"] > [class*="cell_"],
+[class*="grid-12"] > [class*="cell-"],
+[class*="grid-12"] > [class~="cell"] {
+  --flex-index: 5;
+}
+[class~="grid"] > [class*="cell-12"],
+[class*="grid-"] > [class*="cell-12"],
+[class*="grid_"] > [class*="cell-12"] {
+  --flex-index: 12;
+}
+[class*="rt-12"] {
+  --pull-index: 12;
+}
+[class*="lt-12"] {
+  --push-index: 12;
+}
+[class*="grid-13"] > [class*="cell_"],
+[class*="grid-13"] > [class*="cell-"],
+[class*="grid-13"] > [class~="cell"] {
+  --flex-index: 4;
+}
+[class~="grid"] > [class*="cell-13"],
+[class*="grid-"] > [class*="cell-13"],
+[class*="grid_"] > [class*="cell-13"] {
+  --flex-index: 13;
+}
+[class*="rt-13"] {
+  --pull-index: 13;
+}
+[class*="lt-13"] {
+  --push-index: 13;
+}
+[class*="grid-14"] > [class*="cell_"],
+[class*="grid-14"] > [class*="cell-"],
+[class*="grid-14"] > [class~="cell"] {
+  --flex-index: 3;
+}
+[class~="grid"] > [class*="cell-14"],
+[class*="grid-"] > [class*="cell-14"],
+[class*="grid_"] > [class*="cell-14"] {
+  --flex-index: 14;
+}
+[class*="rt-14"] {
+  --pull-index: 14;
+}
+[class*="lt-14"] {
+  --push-index: 14;
+}
+[class*="grid-15"] > [class*="cell_"],
+[class*="grid-15"] > [class*="cell-"],
+[class*="grid-15"] > [class~="cell"] {
+  --flex-index: 2;
+}
+[class~="grid"] > [class*="cell-15"],
+[class*="grid-"] > [class*="cell-15"],
+[class*="grid_"] > [class*="cell-15"] {
+  --flex-index: 15;
+}
+[class*="rt-15"] {
+  --pull-index: 15;
+}
+[class*="lt-15"] {
+  --push-index: 15;
+}
+[class*="grid-16"] > [class*="cell_"],
+[class*="grid-16"] > [class*="cell-"],
+[class*="grid-16"] > [class~="cell"] {
+  --flex-index: 1;
+}
+[class~="grid"] > [class*="cell-16"],
+[class*="grid-"] > [class*="cell-16"],
+[class*="grid_"] > [class*="cell-16"] {
+  --flex-index: 16;
+}
+[class*="rt-16"] {
+  --pull-index: 16;
+}
+[class*="lt-16"] {
+  --push-index: 16;
+}

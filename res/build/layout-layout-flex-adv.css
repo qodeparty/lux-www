@@ -412,6 +412,7 @@
 [class*="grid_"] > [class*="lt-16"] {
   margin-left: 100%;
 }
+/*nano disabled*/
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   .xs-v,
   .show-on-mobile {
