@@ -1,4 +1,5 @@
-.container {
+.container,
+.container-fixed {
   margin: 0 auto;
   position: relative;
 }
@@ -10,80 +11,67 @@
   right: 0;
   background: #94da87;
 }
-@media screen and (max-width: 47.9375rem) {
+@media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
   .container-fixed {
-    margin: 0 auto;
-    position: relative;
-    width: 22.4375rem;
-    max-width: 22.4375rem;
-  }
-  .container-fixed:after {
-    content: 'mobile 22.4375rem';
+    width: 17rem;
+    max-width: 21.5rem;
+    --media: 'nano';
+    --break: 0 360;
   }
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   .container-fixed {
-    margin: 0 auto;
-    position: relative;
-    width: 48rem;
-    max-width: 48rem;
+    width: 22.5rem;
+    max-width: 47rem;
+    --media: 'mobile';
+    --break: 360 768;
   }
-  .container-fixed:after {
-    content: 'tablet 48rem';
+}
+@media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
+  .container-fixed {
+    width: 48rem;
+    max-width: 63rem;
+    --media: 'tablet';
+    --break: 768 1024;
   }
 }
 @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
   .container-fixed {
-    margin: 0 auto;
-    position: relative;
     width: 64rem;
-    max-width: 64rem;
-  }
-  .container-fixed:after {
-    content: 'desktop 64rem';
+    max-width: 75rem;
+    --media: 'desktop';
+    --break: 1024 1216;
   }
 }
 @media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
   .container-fixed {
-    margin: 0 auto;
-    position: relative;
-    width: 75rem;
-    max-width: 75rem;
-  }
-  .container-fixed:after {
-    content: 'wide 75rem';
+    width: 76rem;
+    max-width: 89rem;
+    --media: 'wide';
+    --break: 1216 1440;
   }
 }
 @media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
   .container-fixed {
-    margin: 0 auto;
-    position: relative;
-    width: 89.9375rem;
-    max-width: 89.9375rem;
-  }
-  .container-fixed:after {
-    content: 'full 89.9375rem';
+    width: 90rem;
+    max-width: 119rem;
+    --media: 'full';
+    --break: 1440 1920;
   }
 }
 @media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
   .container-fixed {
-    margin: 0 auto;
-    position: relative;
-    width: 119.9375rem;
-    max-width: 119.9375rem;
-  }
-  .container-fixed:after {
-    content: 'wide 119.9375rem';
+    width: 120rem;
+    max-width: 159rem;
+    --media: 'jumbo';
+    --break: 1920 2560;
   }
 }
 @media screen and (min-width: 160rem) {
   .container-fixed {
-    margin: 0 auto;
-    position: relative;
     width: 160rem;
-    max-width: 160rem;
-  }
-  .container-fixed:after {
-    content: 'ultra 160rem';
+    max-width: 623.9375rem;
+    --media: 'ultra';
+    --break: 2560 9999;
   }
 }

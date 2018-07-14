@@ -356,7 +356,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.5.r-100 (16)';
+  content: 'v0.5.r-101 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
