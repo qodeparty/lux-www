@@ -345,6 +345,7 @@ pre {
 }
 [class*="block-"][class*="-ctr"] {
   justify-content: center;
+  margin: 0 auto;
   flex-grow: 1;
 }
 [class*="block-"][class*="-item"] {
@@ -508,9 +509,6 @@ button[class*="block-"][class*="-auto"] {
     margin: 0 auto;
   }
 }
-.is-centered {
-  text-align: center !important;
-}
 .as-tiles .block-lt,
 .as-tiles .block-rt,
 .as-tiles .block-ctr,
@@ -535,12 +533,6 @@ button[class*="block-"][class*="-auto"] {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-}
-.row.with-gaps > .col {
-  padding: 0.5rem;
-}
-.row.with-sm-gaps > .col {
-  padding: 0.25rem;
 }
 .col.is-1,
 .row > .spans-1 {
@@ -5471,6 +5463,9 @@ button[class*="block-"][class*="-auto"] {
   max-width: unset;
   flex: 1 1 auto;
 }
+[class*="slot-"][class*="-auto"] {
+  align-self: stretch;
+}
 .basis:after {
   content: '16';
   text-decoration-line: none;
@@ -5598,10 +5593,10 @@ h6.is-title {
   position: relative;
   vertical-align: baseline;
 }
-[class*="text-000"] {
+[class*="text-z"] {
   font-size: 0.25rem;
 }
-[class*="text-00"] {
+[class*="text-y"] {
   font-size: 0.5rem;
 }
 [class*="text-0"] {
@@ -5635,16 +5630,16 @@ h6.is-title {
   font-size: 3rem;
 }
 [class*="text-99"] {
-  font-size: 3.25rem;
+  font-size: 4rem;
 }
 [class*="text-999"] {
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 @media screen and (max-width: 22.4375rem) {
-  [class*="_txxs-000"] {
+  [class*="_txxs-z"] {
     font-size: 0.25rem;
   }
-  [class*="_txxs-00"] {
+  [class*="_txxs-y"] {
     font-size: 0.5rem;
   }
   [class*="_txxs-0"] {
@@ -5678,17 +5673,17 @@ h6.is-title {
     font-size: 3rem;
   }
   [class*="_txxs-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_txxs-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
-  [class*="_txs-000"] {
+  [class*="_txs-z"] {
     font-size: 0.25rem;
   }
-  [class*="_txs-00"] {
+  [class*="_txs-y"] {
     font-size: 0.5rem;
   }
   [class*="_txs-0"] {
@@ -5722,17 +5717,17 @@ h6.is-title {
     font-size: 3rem;
   }
   [class*="_txs-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_txs-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
-  [class*="_tsm-000"] {
+  [class*="_tsm-z"] {
     font-size: 0.25rem;
   }
-  [class*="_tsm-00"] {
+  [class*="_tsm-y"] {
     font-size: 0.5rem;
   }
   [class*="_tsm-0"] {
@@ -5766,17 +5761,17 @@ h6.is-title {
     font-size: 3rem;
   }
   [class*="_tsm-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_tsm-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 0rem) and (max-width: 63.9375rem) {
-  [class*="_ttouch-000"] {
+  [class*="_ttouch-z"] {
     font-size: 0.25rem;
   }
-  [class*="_ttouch-00"] {
+  [class*="_ttouch-y"] {
     font-size: 0.5rem;
   }
   [class*="_ttouch-0"] {
@@ -5810,17 +5805,17 @@ h6.is-title {
     font-size: 3rem;
   }
   [class*="_ttouch-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_ttouch-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 64rem) {
-  [class*="_tdesk-000"] {
+  [class*="_tdesk-z"] {
     font-size: 0.25rem;
   }
-  [class*="_tdesk-00"] {
+  [class*="_tdesk-y"] {
     font-size: 0.5rem;
   }
   [class*="_tdesk-0"] {
@@ -5854,17 +5849,17 @@ h6.is-title {
     font-size: 3rem;
   }
   [class*="_tdesk-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_tdesk-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 160rem) {
-  [class*="_txxx-000"] {
+  [class*="_txxx-z"] {
     font-size: 0.25rem;
   }
-  [class*="_txxx-00"] {
+  [class*="_txxx-y"] {
     font-size: 0.5rem;
   }
   [class*="_txxx-0"] {
@@ -5898,10 +5893,10 @@ h6.is-title {
     font-size: 3rem;
   }
   [class*="_txxx-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_txxx-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 .is-static {
@@ -6140,8 +6135,8 @@ body.debug {
   position: relative;
   border: 1px dotted #75b8fb;
   background: #eee;
-  padding: 30px;
-  margin: 50px;
+  padding: 1rem;
+  margin: 1rem;
 }
 #annotate .grouping.note {
   color: #fa6563;
@@ -6187,12 +6182,14 @@ body.debug {
 #annotate .code {
   display: none;
 }
-#annotate [data-tag] {
+#annotate [data-tag],
+#annotate .example {
   border: 1px dotted #75b8fb;
   margin: 5px 0;
   padding: 5px;
 }
-#annotate [data-tag]:after {
+#annotate [data-tag]:after,
+#annotate .example:after {
   content: "";
   display: table;
   clear: both;
@@ -6289,7 +6286,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.5.r-101 (16)';
+  content: 'v0.5.r-102 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
@@ -6329,6 +6326,17 @@ body.debug:after {
 }
 .archxray .changes-shadow .thing {
   background: var(--debug-color);
+}
+.archxray .container,
+.archxray .container-fixed {
+  color: var(--debug-color);
+  background: rgba(85,188,237,0.3) !important;
+  border: 1px dashed var(--debug-color) !important;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.archxray .pretty-content {
+  color: #000 !important;
 }
 .archxray .thing {
   background: rgba(86,188,225,0.5);
@@ -6402,9 +6410,6 @@ body.debug:after {
 .archxray .u1 .thing {
   background: #b5b5b5 !important;
 }
-.archxray .pretty-content {
-  color: #e8e8e8 !important;
-}
 .archxray .s1 .thing {
   background: rgba(249,100,203,0.5);
 }
@@ -6463,13 +6468,6 @@ body.debug:after {
 .archxray .cells article {
   border-radius: 5px;
   color: #fff;
-}
-.archxray .container,
-.archxray .container-fixed {
-  background: rgba(232,232,232,0.3) !important;
-  border: 2px dashed #e8e8e8 !important;
-  color: #e8e8e8 !important;
-  margin-bottom: 1rem;
 }
 .archxray .blocks:not(.stripes5) {
   display: block;

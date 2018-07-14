@@ -16,8 +16,8 @@
   position: relative;
   border: 1px dotted #75b8fb;
   background: #eee;
-  padding: 30px;
-  margin: 50px;
+  padding: 1rem;
+  margin: 1rem;
 }
 #annotate .grouping.note {
   color: #fa6563;
@@ -63,12 +63,14 @@
 #annotate .code {
   display: none;
 }
-#annotate [data-tag] {
+#annotate [data-tag],
+#annotate .example {
   border: 1px dotted #75b8fb;
   margin: 5px 0;
   padding: 5px;
 }
-#annotate [data-tag]:after {
+#annotate [data-tag]:after,
+#annotate .example:after {
   content: "";
   display: table;
   clear: both;
@@ -168,7 +170,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.5.r-101 (16)';
+  content: 'v0.5.r-102 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;

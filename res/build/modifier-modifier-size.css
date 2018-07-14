@@ -1,7 +1,7 @@
-[class*="text-000"] {
+[class*="text-z"] {
   font-size: 0.25rem;
 }
-[class*="text-00"] {
+[class*="text-y"] {
   font-size: 0.5rem;
 }
 [class*="text-0"] {
@@ -35,16 +35,16 @@
   font-size: 3rem;
 }
 [class*="text-99"] {
-  font-size: 3.25rem;
+  font-size: 4rem;
 }
 [class*="text-999"] {
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 @media screen and (max-width: 22.4375rem) {
-  [class*="_txxs-000"] {
+  [class*="_txxs-z"] {
     font-size: 0.25rem;
   }
-  [class*="_txxs-00"] {
+  [class*="_txxs-y"] {
     font-size: 0.5rem;
   }
   [class*="_txxs-0"] {
@@ -78,17 +78,17 @@
     font-size: 3rem;
   }
   [class*="_txxs-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_txxs-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
-  [class*="_txs-000"] {
+  [class*="_txs-z"] {
     font-size: 0.25rem;
   }
-  [class*="_txs-00"] {
+  [class*="_txs-y"] {
     font-size: 0.5rem;
   }
   [class*="_txs-0"] {
@@ -122,17 +122,17 @@
     font-size: 3rem;
   }
   [class*="_txs-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_txs-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
-  [class*="_tsm-000"] {
+  [class*="_tsm-z"] {
     font-size: 0.25rem;
   }
-  [class*="_tsm-00"] {
+  [class*="_tsm-y"] {
     font-size: 0.5rem;
   }
   [class*="_tsm-0"] {
@@ -166,17 +166,17 @@
     font-size: 3rem;
   }
   [class*="_tsm-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_tsm-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 0rem) and (max-width: 63.9375rem) {
-  [class*="_ttouch-000"] {
+  [class*="_ttouch-z"] {
     font-size: 0.25rem;
   }
-  [class*="_ttouch-00"] {
+  [class*="_ttouch-y"] {
     font-size: 0.5rem;
   }
   [class*="_ttouch-0"] {
@@ -210,17 +210,17 @@
     font-size: 3rem;
   }
   [class*="_ttouch-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_ttouch-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 64rem) {
-  [class*="_tdesk-000"] {
+  [class*="_tdesk-z"] {
     font-size: 0.25rem;
   }
-  [class*="_tdesk-00"] {
+  [class*="_tdesk-y"] {
     font-size: 0.5rem;
   }
   [class*="_tdesk-0"] {
@@ -254,17 +254,17 @@
     font-size: 3rem;
   }
   [class*="_tdesk-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_tdesk-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 @media screen and (min-width: 160rem) {
-  [class*="_txxx-000"] {
+  [class*="_txxx-z"] {
     font-size: 0.25rem;
   }
-  [class*="_txxx-00"] {
+  [class*="_txxx-y"] {
     font-size: 0.5rem;
   }
   [class*="_txxx-0"] {
@@ -298,9 +298,9 @@
     font-size: 3rem;
   }
   [class*="_txxx-99"] {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
   [class*="_txxx-999"] {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }

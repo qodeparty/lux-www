@@ -47,6 +47,7 @@
 }
 [class*="block-"][class*="-ctr"] {
   justify-content: center;
+  margin: 0 auto;
   flex-grow: 1;
 }
 [class*="block-"][class*="-item"] {
@@ -209,9 +210,6 @@ button[class*="block-"][class*="-auto"] {
     display: block;
     margin: 0 auto;
   }
-}
-.is-centered {
-  text-align: center !important;
 }
 .as-tiles .block-lt,
 .as-tiles .block-rt,
