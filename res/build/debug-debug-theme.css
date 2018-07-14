@@ -90,22 +90,22 @@
   background: rgba(250,101,99,0.5);
 }
 .archxray .s3 .thing {
-  background: rgba(255,166,77,0.5);
+  background: rgba(218,127,37,0.5);
 }
 .archxray .s4 .thing {
-  background: rgba(255,224,86,0.5);
+  background: rgba(206,180,48,0.5);
 }
 .archxray .s5 .thing {
-  background: rgba(148,218,135,0.5);
-}
-.archxray .s6 .thing {
   background: rgba(57,158,84,0.5);
 }
-.archxray .s7 .thing {
+.archxray .s6 .thing {
   background: rgba(51,153,255,0.5);
 }
-.archxray .s8 .thing {
+.archxray .s7 .thing {
   background: rgba(104,104,220,0.5);
+}
+.archxray .s8 .thing {
+  background: rgba(64,64,88,0.5);
 }
 .archxray .thing.trunc {
   text-overflow: ellipsis;

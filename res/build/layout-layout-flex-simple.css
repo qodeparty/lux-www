@@ -267,7 +267,145 @@
 /* /////////////////////////////////////////////////////////////////////////////
 // Flexbox -> Media + Spans and Offsets generator
 ///////////////////////////////////////////////////////////////////////////// */
-/*nano disabled*/
+@media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
+  .is-hidden-nano {
+    display: none;
+  }
+  .is-block-nano {
+    display: block;
+  }
+  .is-static-nano {
+    flex: none;
+  }
+  .col.is-1-nano,
+  .row > .spans-1-nano {
+    width: 6.25%;
+    flex: none;
+  }
+  .row > .offsets-1-nano {
+    margin-left: 6.25%;
+  }
+  .col.is-2-nano,
+  .row > .spans-2-nano {
+    width: 12.5%;
+    flex: none;
+  }
+  .row > .offsets-2-nano {
+    margin-left: 12.5%;
+  }
+  .col.is-3-nano,
+  .row > .spans-3-nano {
+    width: 18.75%;
+    flex: none;
+  }
+  .row > .offsets-3-nano {
+    margin-left: 18.75%;
+  }
+  .col.is-4-nano,
+  .row > .spans-4-nano {
+    width: 25%;
+    flex: none;
+  }
+  .row > .offsets-4-nano {
+    margin-left: 25%;
+  }
+  .col.is-5-nano,
+  .row > .spans-5-nano {
+    width: 31.25%;
+    flex: none;
+  }
+  .row > .offsets-5-nano {
+    margin-left: 31.25%;
+  }
+  .col.is-6-nano,
+  .row > .spans-6-nano {
+    width: 37.5%;
+    flex: none;
+  }
+  .row > .offsets-6-nano {
+    margin-left: 37.5%;
+  }
+  .col.is-7-nano,
+  .row > .spans-7-nano {
+    width: 43.75%;
+    flex: none;
+  }
+  .row > .offsets-7-nano {
+    margin-left: 43.75%;
+  }
+  .col.is-8-nano,
+  .row > .spans-8-nano {
+    width: 50%;
+    flex: none;
+  }
+  .row > .offsets-8-nano {
+    margin-left: 50%;
+  }
+  .col.is-9-nano,
+  .row > .spans-9-nano {
+    width: 56.25%;
+    flex: none;
+  }
+  .row > .offsets-9-nano {
+    margin-left: 56.25%;
+  }
+  .col.is-10-nano,
+  .row > .spans-10-nano {
+    width: 62.5%;
+    flex: none;
+  }
+  .row > .offsets-10-nano {
+    margin-left: 62.5%;
+  }
+  .col.is-11-nano,
+  .row > .spans-11-nano {
+    width: 68.75%;
+    flex: none;
+  }
+  .row > .offsets-11-nano {
+    margin-left: 68.75%;
+  }
+  .col.is-12-nano,
+  .row > .spans-12-nano {
+    width: 75%;
+    flex: none;
+  }
+  .row > .offsets-12-nano {
+    margin-left: 75%;
+  }
+  .col.is-13-nano,
+  .row > .spans-13-nano {
+    width: 81.25%;
+    flex: none;
+  }
+  .row > .offsets-13-nano {
+    margin-left: 81.25%;
+  }
+  .col.is-14-nano,
+  .row > .spans-14-nano {
+    width: 87.5%;
+    flex: none;
+  }
+  .row > .offsets-14-nano {
+    margin-left: 87.5%;
+  }
+  .col.is-15-nano,
+  .row > .spans-15-nano {
+    width: 93.75%;
+    flex: none;
+  }
+  .row > .offsets-15-nano {
+    margin-left: 93.75%;
+  }
+  .col.is-16-nano,
+  .row > .spans-16-nano {
+    width: 100%;
+    flex: none;
+  }
+  .row > .offsets-16-nano {
+    margin-left: 100%;
+  }
+}
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
   .is-hidden-mobile {
     display: none;
