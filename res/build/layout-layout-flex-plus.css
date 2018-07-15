@@ -32,11 +32,11 @@
   padding: 0;
 }
 /************************************************************/
-[class*="rt-"],
+[class*="right-"],
 [class*="_r"] {
   margin-right: calc( var(--pull-index, 1) * 6.25%);
 }
-[class*="lt-"],
+[class*="left-"],
 [class*="_l"] {
   margin-left: calc( var(--push-index, 1) * 6.25%);
 }
@@ -233,106 +233,106 @@
   flex-basis: 100%;
   max-width: 100%;
 }
-[class*="rt-0"] {
+[class*="right-0"] {
   --pull-index: 0;
 }
-[class*="lt-0"] {
+[class*="left-0"] {
   --push-index: 0;
 }
-[class*="rt-1"] {
+[class*="right-1"] {
   --pull-index: 1;
 }
-[class*="lt-1"] {
+[class*="left-1"] {
   --push-index: 1;
 }
-[class*="rt-2"] {
+[class*="right-2"] {
   --pull-index: 2;
 }
-[class*="lt-2"] {
+[class*="left-2"] {
   --push-index: 2;
 }
-[class*="rt-3"] {
+[class*="right-3"] {
   --pull-index: 3;
 }
-[class*="lt-3"] {
+[class*="left-3"] {
   --push-index: 3;
 }
-[class*="rt-4"] {
+[class*="right-4"] {
   --pull-index: 4;
 }
-[class*="lt-4"] {
+[class*="left-4"] {
   --push-index: 4;
 }
-[class*="rt-5"] {
+[class*="right-5"] {
   --pull-index: 5;
 }
-[class*="lt-5"] {
+[class*="left-5"] {
   --push-index: 5;
 }
-[class*="rt-6"] {
+[class*="right-6"] {
   --pull-index: 6;
 }
-[class*="lt-6"] {
+[class*="left-6"] {
   --push-index: 6;
 }
-[class*="rt-7"] {
+[class*="right-7"] {
   --pull-index: 7;
 }
-[class*="lt-7"] {
+[class*="left-7"] {
   --push-index: 7;
 }
-[class*="rt-8"] {
+[class*="right-8"] {
   --pull-index: 8;
 }
-[class*="lt-8"] {
+[class*="left-8"] {
   --push-index: 8;
 }
-[class*="rt-9"] {
+[class*="right-9"] {
   --pull-index: 9;
 }
-[class*="lt-9"] {
+[class*="left-9"] {
   --push-index: 9;
 }
-[class*="rt-10"] {
+[class*="right-10"] {
   --pull-index: 10;
 }
-[class*="lt-10"] {
+[class*="left-10"] {
   --push-index: 10;
 }
-[class*="rt-11"] {
+[class*="right-11"] {
   --pull-index: 11;
 }
-[class*="lt-11"] {
+[class*="left-11"] {
   --push-index: 11;
 }
-[class*="rt-12"] {
+[class*="right-12"] {
   --pull-index: 12;
 }
-[class*="lt-12"] {
+[class*="left-12"] {
   --push-index: 12;
 }
-[class*="rt-13"] {
+[class*="right-13"] {
   --pull-index: 13;
 }
-[class*="lt-13"] {
+[class*="left-13"] {
   --push-index: 13;
 }
-[class*="rt-14"] {
+[class*="right-14"] {
   --pull-index: 14;
 }
-[class*="lt-14"] {
+[class*="left-14"] {
   --push-index: 14;
 }
-[class*="rt-15"] {
+[class*="right-15"] {
   --pull-index: 15;
 }
-[class*="lt-15"] {
+[class*="left-15"] {
   --push-index: 15;
 }
-[class*="rt-16"] {
+[class*="right-16"] {
   --pull-index: 16;
 }
-[class*="lt-16"] {
+[class*="left-16"] {
   --push-index: 16;
 }
 /************************************************************/

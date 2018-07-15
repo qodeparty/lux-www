@@ -163,7 +163,6 @@
 // DEBUG BLOCK
 ////////////////////////////////////////////////////////////////////////////// */
 .archxray .blocks:not(.stripes5) {
-  display: block;
   padding: 2rem;
   margin: 1rem;
 }
@@ -181,7 +180,8 @@
 .archxray .xray-blocks [class*="block-"]:not(input):not(textarea):not(.block-spacer):not(.block-breaker) {
   background: rgba(86,188,225,0.3);
 }
-.archxray .as-tiles article {
+.archxray .as-tiles article,
+.archxray [class*="block-"][class*='-tile'] article {
   padding: 2rem 1.25rem !important;
 }
 .archxray .xray-blocks .block-breaker {

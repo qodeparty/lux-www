@@ -32,11 +32,11 @@
   padding: 0;
 }
 /************************************************************/
-[class*="rt-"],
+[class*="right-"],
 [class*="_r"] {
   margin-right: calc( var(--pull-index, 1) * 6.25%);
 }
-[class*="lt-"],
+[class*="left-"],
 [class*="_l"] {
   margin-left: calc( var(--push-index, 1) * 6.25%);
 }
