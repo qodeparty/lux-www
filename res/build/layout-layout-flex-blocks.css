@@ -7,9 +7,6 @@
 .block-item {
   position: relative;
 }
-.blocks {
-  display: flex;
-}
 .block-item {
   align-self: stretch;
 }
@@ -25,8 +22,9 @@
 .with-gaps .block {
   margin: 0.25rem 0;
 }
+/* display block on non-mobile */
 .block {
-  display: flex /* display block on non-mobile */;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -97,7 +95,7 @@ button[class*="block-"][class*="-auto"] {
     display: block;
   }
   .block,
-  [class*="block-"]:not(.block-spacer):not(.block-inline) {
+  [class*="block-"][class*="-resp"]:not(.block-spacer):not(.block-inline) {
     display: block;
   }
   .block-item {
@@ -119,11 +117,11 @@ button[class*="block-"][class*="-auto"] {
     margin: 0 auto;
   }
 }
-.as-tiles .block-lt,
-.as-tiles .block-rt,
-.as-tiles .block-ctr,
+.as-tiles [class*="-lt"],
+.as-tiles [class*="-rt"],
+.as-tiles [class*="-ctr"],
 .as-tiles .block-vert,
-.as-tiles .block-auto,
+.as-tiles [class*="block-"]:not(.block-item),
 .as-tiles .block,
 [class*="block-"][class*='-tile'],
 .as-tiles .block-item,
@@ -134,11 +132,11 @@ button[class*="block-"][class*="-auto"] {
   flex-shrink: 1;
   flex-basis: 0;
 }
-.as-tiles .block-lt,
-.as-tiles .block-rt,
-.as-tiles .block-ctr,
+.as-tiles [class*="-lt"],
+.as-tiles [class*="-rt"],
+.as-tiles [class*="-ctr"],
 .as-tiles .block-vert,
-.as-tiles .block-auto,
+.as-tiles [class*="block-"]:not(.block-item),
 .as-tiles .block,
 [class*="block-"][class*='-tile'] {
   display: flex;

@@ -1,0 +1,1528 @@
+.iconset {
+  max-width: inherit;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icons div {
+  position: relative;
+  border: 1px solid #fff;
+  padding: 2px;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: normal;
+}
+[class*='icon-'] {
+  font-family: Awzum;
+}
+[class*='icon-']:before {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+.icon-0:before {
+  content: '\f000';
+}
+.icon-1:before {
+  content: '\f001';
+}
+.icon-2:before {
+  content: '\f002';
+}
+.icon-3:before {
+  content: '\f003';
+}
+.icon-4:before {
+  content: '\f004';
+}
+.icon-5:before {
+  content: '\f005';
+}
+.icon-6:before {
+  content: '\f006';
+}
+.icon-7:before {
+  content: '\f007';
+}
+.icon-8:before {
+  content: '\f008';
+}
+.icon-9:before {
+  content: '\f009';
+}
+.icon-10:before {
+  content: '\f010';
+}
+.icon-11:before {
+  content: '\f011';
+}
+.icon-12:before {
+  content: '\f012';
+}
+.icon-13:before {
+  content: '\f013';
+}
+.icon-14:before {
+  content: '\f014';
+}
+.icon-15:before {
+  content: '\f015';
+}
+.icon-16:before {
+  content: '\f016';
+}
+.icon-17:before {
+  content: '\f017';
+}
+.icon-18:before {
+  content: '\f018';
+}
+.icon-19:before {
+  content: '\f019';
+}
+.icon-20:before {
+  content: '\f020';
+}
+.icon-21:before {
+  content: '\f021';
+}
+.icon-22:before {
+  content: '\f022';
+}
+.icon-23:before {
+  content: '\f023';
+}
+.icon-24:before {
+  content: '\f024';
+}
+.icon-25:before {
+  content: '\f025';
+}
+.icon-26:before {
+  content: '\f026';
+}
+.icon-27:before {
+  content: '\f027';
+}
+.icon-28:before {
+  content: '\f028';
+}
+.icon-29:before {
+  content: '\f029';
+}
+.icon-30:before {
+  content: '\f030';
+}
+.icon-31:before {
+  content: '\f031';
+}
+.icon-32:before {
+  content: '\f032';
+}
+.icon-33:before {
+  content: '\f033';
+}
+.icon-34:before {
+  content: '\f034';
+}
+.icon-35:before {
+  content: '\f035';
+}
+.icon-36:before {
+  content: '\f036';
+}
+.icon-37:before {
+  content: '\f037';
+}
+.icon-38:before {
+  content: '\f038';
+}
+.icon-39:before {
+  content: '\f039';
+}
+.icon-40:before {
+  content: '\f040';
+}
+.icon-41:before {
+  content: '\f041';
+}
+.icon-42:before {
+  content: '\f042';
+}
+.icon-43:before {
+  content: '\f043';
+}
+.icon-44:before {
+  content: '\f044';
+}
+.icon-45:before {
+  content: '\f045';
+}
+.icon-46:before {
+  content: '\f046';
+}
+.icon-47:before {
+  content: '\f047';
+}
+.icon-48:before {
+  content: '\f048';
+}
+.icon-49:before {
+  content: '\f049';
+}
+.icon-50:before {
+  content: '\f050';
+}
+.icon-51:before {
+  content: '\f051';
+}
+.icon-52:before {
+  content: '\f052';
+}
+.icon-53:before {
+  content: '\f053';
+}
+.icon-54:before {
+  content: '\f054';
+}
+.icon-55:before {
+  content: '\f055';
+}
+.icon-56:before {
+  content: '\f056';
+}
+.icon-57:before {
+  content: '\f057';
+}
+.icon-58:before {
+  content: '\f058';
+}
+.icon-59:before {
+  content: '\f059';
+}
+.icon-60:before {
+  content: '\f060';
+}
+.icon-61:before {
+  content: '\f061';
+}
+.icon-62:before {
+  content: '\f062';
+}
+.icon-63:before {
+  content: '\f063';
+}
+.icon-64:before {
+  content: '\f064';
+}
+.icon-65:before {
+  content: '\f065';
+}
+.icon-66:before {
+  content: '\f066';
+}
+.icon-67:before {
+  content: '\f067';
+}
+.icon-68:before {
+  content: '\f068';
+}
+.icon-69:before {
+  content: '\f069';
+}
+.icon-70:before {
+  content: '\f070';
+}
+.icon-71:before {
+  content: '\f071';
+}
+.icon-72:before {
+  content: '\f072';
+}
+.icon-73:before {
+  content: '\f073';
+}
+.icon-74:before {
+  content: '\f074';
+}
+.icon-75:before {
+  content: '\f075';
+}
+.icon-76:before {
+  content: '\f076';
+}
+.icon-77:before {
+  content: '\f077';
+}
+.icon-78:before {
+  content: '\f078';
+}
+.icon-79:before {
+  content: '\f079';
+}
+.icon-80:before {
+  content: '\f080';
+}
+.icon-81:before {
+  content: '\f081';
+}
+.icon-82:before {
+  content: '\f082';
+}
+.icon-83:before {
+  content: '\f083';
+}
+.icon-84:before {
+  content: '\f084';
+}
+.icon-85:before {
+  content: '\f085';
+}
+.icon-86:before {
+  content: '\f086';
+}
+.icon-87:before {
+  content: '\f087';
+}
+.icon-88:before {
+  content: '\f088';
+}
+.icon-89:before {
+  content: '\f089';
+}
+.icon-90:before {
+  content: '\f090';
+}
+.icon-91:before {
+  content: '\f091';
+}
+.icon-92:before {
+  content: '\f092';
+}
+.icon-93:before {
+  content: '\f093';
+}
+.icon-94:before {
+  content: '\f094';
+}
+.icon-95:before {
+  content: '\f095';
+}
+.icon-96:before {
+  content: '\f096';
+}
+.icon-97:before {
+  content: '\f097';
+}
+.icon-98:before {
+  content: '\f098';
+}
+.icon-99:before {
+  content: '\f099';
+}
+.icon-100:before {
+  content: '\f100';
+}
+.icon-101:before {
+  content: '\f101';
+}
+.icon-102:before {
+  content: '\f102';
+}
+.icon-103:before {
+  content: '\f103';
+}
+.icon-104:before {
+  content: '\f104';
+}
+.icon-105:before {
+  content: '\f105';
+}
+.icon-106:before {
+  content: '\f106';
+}
+.icon-107:before {
+  content: '\f107';
+}
+.icon-108:before {
+  content: '\f108';
+}
+.icon-109:before {
+  content: '\f109';
+}
+.icon-110:before {
+  content: '\f110';
+}
+.icon-111:before {
+  content: '\f111';
+}
+.icon-112:before {
+  content: '\f112';
+}
+.icon-113:before {
+  content: '\f113';
+}
+.icon-114:before {
+  content: '\f114';
+}
+.icon-115:before {
+  content: '\f115';
+}
+.icon-116:before {
+  content: '\f116';
+}
+.icon-117:before {
+  content: '\f117';
+}
+.icon-118:before {
+  content: '\f118';
+}
+.icon-119:before {
+  content: '\f119';
+}
+.icon-120:before {
+  content: '\f120';
+}
+.icon-121:before {
+  content: '\f121';
+}
+.icon-122:before {
+  content: '\f122';
+}
+.icon-123:before {
+  content: '\f123';
+}
+.icon-124:before {
+  content: '\f124';
+}
+.icon-125:before {
+  content: '\f125';
+}
+.icon-126:before {
+  content: '\f126';
+}
+.icon-127:before {
+  content: '\f127';
+}
+.icon-128:before {
+  content: '\f128';
+}
+.icon-129:before {
+  content: '\f129';
+}
+.icon-130:before {
+  content: '\f130';
+}
+.icon-131:before {
+  content: '\f131';
+}
+.icon-132:before {
+  content: '\f132';
+}
+.icon-133:before {
+  content: '\f133';
+}
+.icon-134:before {
+  content: '\f134';
+}
+.icon-135:before {
+  content: '\f135';
+}
+.icon-136:before {
+  content: '\f136';
+}
+.icon-137:before {
+  content: '\f137';
+}
+.icon-138:before {
+  content: '\f138';
+}
+.icon-139:before {
+  content: '\f139';
+}
+.icon-140:before {
+  content: '\f140';
+}
+.icon-141:before {
+  content: '\f141';
+}
+.icon-142:before {
+  content: '\f142';
+}
+.icon-143:before {
+  content: '\f143';
+}
+.icon-144:before {
+  content: '\f144';
+}
+.icon-145:before {
+  content: '\f145';
+}
+.icon-146:before {
+  content: '\f146';
+}
+.icon-147:before {
+  content: '\f147';
+}
+.icon-148:before {
+  content: '\f148';
+}
+.icon-149:before {
+  content: '\f149';
+}
+.icon-150:before {
+  content: '\f150';
+}
+.icon-151:before {
+  content: '\f151';
+}
+.icon-152:before {
+  content: '\f152';
+}
+.icon-153:before {
+  content: '\f153';
+}
+.icon-154:before {
+  content: '\f154';
+}
+.icon-155:before {
+  content: '\f155';
+}
+.icon-156:before {
+  content: '\f156';
+}
+.icon-157:before {
+  content: '\f157';
+}
+.icon-158:before {
+  content: '\f158';
+}
+.icon-159:before {
+  content: '\f159';
+}
+.icon-160:before {
+  content: '\f160';
+}
+.icon-161:before {
+  content: '\f161';
+}
+.icon-162:before {
+  content: '\f162';
+}
+.icon-163:before {
+  content: '\f163';
+}
+.icon-164:before {
+  content: '\f164';
+}
+.icon-165:before {
+  content: '\f165';
+}
+.icon-166:before {
+  content: '\f166';
+}
+.icon-167:before {
+  content: '\f167';
+}
+.icon-168:before {
+  content: '\f168';
+}
+.icon-169:before {
+  content: '\f169';
+}
+.icon-170:before {
+  content: '\f170';
+}
+.icon-171:before {
+  content: '\f171';
+}
+.icon-172:before {
+  content: '\f172';
+}
+.icon-173:before {
+  content: '\f173';
+}
+.icon-174:before {
+  content: '\f174';
+}
+.icon-175:before {
+  content: '\f175';
+}
+.icon-176:before {
+  content: '\f176';
+}
+.icon-177:before {
+  content: '\f177';
+}
+.icon-178:before {
+  content: '\f178';
+}
+.icon-179:before {
+  content: '\f179';
+}
+.icon-180:before {
+  content: '\f180';
+}
+.icon-181:before {
+  content: '\f181';
+}
+.icon-182:before {
+  content: '\f182';
+}
+.icon-183:before {
+  content: '\f183';
+}
+.icon-184:before {
+  content: '\f184';
+}
+.icon-185:before {
+  content: '\f185';
+}
+.icon-186:before {
+  content: '\f186';
+}
+.icon-187:before {
+  content: '\f187';
+}
+.icon-188:before {
+  content: '\f188';
+}
+.icon-189:before {
+  content: '\f189';
+}
+.icon-190:before {
+  content: '\f190';
+}
+.icon-191:before {
+  content: '\f191';
+}
+.icon-192:before {
+  content: '\f192';
+}
+.icon-193:before {
+  content: '\f193';
+}
+.icon-194:before {
+  content: '\f194';
+}
+.icon-195:before {
+  content: '\f195';
+}
+.icon-196:before {
+  content: '\f196';
+}
+.icon-197:before {
+  content: '\f197';
+}
+.icon-198:before {
+  content: '\f198';
+}
+.icon-199:before {
+  content: '\f199';
+}
+.icon-200:before {
+  content: '\f200';
+}
+.icon-201:before {
+  content: '\f201';
+}
+.icon-202:before {
+  content: '\f202';
+}
+.icon-203:before {
+  content: '\f203';
+}
+.icon-204:before {
+  content: '\f204';
+}
+.icon-205:before {
+  content: '\f205';
+}
+.icon-206:before {
+  content: '\f206';
+}
+.icon-207:before {
+  content: '\f207';
+}
+.icon-208:before {
+  content: '\f208';
+}
+.icon-209:before {
+  content: '\f209';
+}
+.icon-210:before {
+  content: '\f210';
+}
+.icon-211:before {
+  content: '\f211';
+}
+.icon-212:before {
+  content: '\f212';
+}
+.icon-213:before {
+  content: '\f213';
+}
+.icon-214:before {
+  content: '\f214';
+}
+.icon-215:before {
+  content: '\f215';
+}
+.icon-216:before {
+  content: '\f216';
+}
+.icon-217:before {
+  content: '\f217';
+}
+.icon-218:before {
+  content: '\f218';
+}
+.icon-219:before {
+  content: '\f219';
+}
+.icon-220:before {
+  content: '\f220';
+}
+.icon-221:before {
+  content: '\f221';
+}
+.icon-222:before {
+  content: '\f222';
+}
+.icon-223:before {
+  content: '\f223';
+}
+.icon-224:before {
+  content: '\f224';
+}
+.icon-225:before {
+  content: '\f225';
+}
+.icon-226:before {
+  content: '\f226';
+}
+.icon-227:before {
+  content: '\f227';
+}
+.icon-228:before {
+  content: '\f228';
+}
+.icon-229:before {
+  content: '\f229';
+}
+.icon-230:before {
+  content: '\f230';
+}
+.icon-231:before {
+  content: '\f231';
+}
+.icon-232:before {
+  content: '\f232';
+}
+.icon-233:before {
+  content: '\f233';
+}
+.icon-234:before {
+  content: '\f234';
+}
+.icon-235:before {
+  content: '\f235';
+}
+.icon-236:before {
+  content: '\f236';
+}
+.icon-237:before {
+  content: '\f237';
+}
+.icon-238:before {
+  content: '\f238';
+}
+.icon-239:before {
+  content: '\f239';
+}
+.icon-240:before {
+  content: '\f240';
+}
+.icon-241:before {
+  content: '\f241';
+}
+.icon-242:before {
+  content: '\f242';
+}
+.icon-243:before {
+  content: '\f243';
+}
+.icon-244:before {
+  content: '\f244';
+}
+.icon-245:before {
+  content: '\f245';
+}
+.icon-246:before {
+  content: '\f246';
+}
+.icon-247:before {
+  content: '\f247';
+}
+.icon-248:before {
+  content: '\f248';
+}
+.icon-249:before {
+  content: '\f249';
+}
+.icon-250:before {
+  content: '\f250';
+}
+.icon-251:before {
+  content: '\f251';
+}
+.icon-252:before {
+  content: '\f252';
+}
+.icon-253:before {
+  content: '\f253';
+}
+.icon-254:before {
+  content: '\f254';
+}
+.icon-255:before {
+  content: '\f255';
+}
+.icon-256:before {
+  content: '\f256';
+}
+.icon-257:before {
+  content: '\f257';
+}
+.icon-258:before {
+  content: '\f258';
+}
+.icon-259:before {
+  content: '\f259';
+}
+.icon-260:before {
+  content: '\f260';
+}
+.icon-261:before {
+  content: '\f261';
+}
+.icon-262:before {
+  content: '\f262';
+}
+.icon-263:before {
+  content: '\f263';
+}
+.icon-264:before {
+  content: '\f264';
+}
+.icon-265:before {
+  content: '\f265';
+}
+.icon-266:before {
+  content: '\f266';
+}
+.icon-267:before {
+  content: '\f267';
+}
+.icon-268:before {
+  content: '\f268';
+}
+.icon-269:before {
+  content: '\f269';
+}
+.icon-270:before {
+  content: '\f270';
+}
+.icon-271:before {
+  content: '\f271';
+}
+.icon-272:before {
+  content: '\f272';
+}
+.icon-273:before {
+  content: '\f273';
+}
+.icon-274:before {
+  content: '\f274';
+}
+.icon-275:before {
+  content: '\f275';
+}
+.icon-276:before {
+  content: '\f276';
+}
+.icon-277:before {
+  content: '\f277';
+}
+.icon-278:before {
+  content: '\f278';
+}
+.icon-279:before {
+  content: '\f279';
+}
+.icon-280:before {
+  content: '\f280';
+}
+.icon-281:before {
+  content: '\f281';
+}
+.icon-282:before {
+  content: '\f282';
+}
+.icon-283:before {
+  content: '\f283';
+}
+.icon-284:before {
+  content: '\f284';
+}
+.icon-285:before {
+  content: '\f285';
+}
+.icon-286:before {
+  content: '\f286';
+}
+.icon-287:before {
+  content: '\f287';
+}
+.icon-288:before {
+  content: '\f288';
+}
+.icon-289:before {
+  content: '\f289';
+}
+.icon-290:before {
+  content: '\f290';
+}
+.icon-291:before {
+  content: '\f291';
+}
+.icon-292:before {
+  content: '\f292';
+}
+.icon-293:before {
+  content: '\f293';
+}
+.icon-294:before {
+  content: '\f294';
+}
+.icon-295:before {
+  content: '\f295';
+}
+.icon-296:before {
+  content: '\f296';
+}
+.icon-297:before {
+  content: '\f297';
+}
+.icon-298:before {
+  content: '\f298';
+}
+.icon-299:before {
+  content: '\f299';
+}
+.icon-300:before {
+  content: '\f300';
+}
+.icon-301:before {
+  content: '\f301';
+}
+.icon-302:before {
+  content: '\f302';
+}
+.icon-303:before {
+  content: '\f303';
+}
+.icon-304:before {
+  content: '\f304';
+}
+.icon-305:before {
+  content: '\f305';
+}
+.icon-306:before {
+  content: '\f306';
+}
+.icon-307:before {
+  content: '\f307';
+}
+.icon-308:before {
+  content: '\f308';
+}
+.icon-309:before {
+  content: '\f309';
+}
+.icon-310:before {
+  content: '\f310';
+}
+.icon-311:before {
+  content: '\f311';
+}
+.icon-312:before {
+  content: '\f312';
+}
+.icon-313:before {
+  content: '\f313';
+}
+.icon-314:before {
+  content: '\f314';
+}
+.icon-315:before {
+  content: '\f315';
+}
+.icon-316:before {
+  content: '\f316';
+}
+.icon-317:before {
+  content: '\f317';
+}
+.icon-318:before {
+  content: '\f318';
+}
+.icon-319:before {
+  content: '\f319';
+}
+.icon-320:before {
+  content: '\f320';
+}
+.icon-321:before {
+  content: '\f321';
+}
+.icon-322:before {
+  content: '\f322';
+}
+.icon-323:before {
+  content: '\f323';
+}
+.icon-324:before {
+  content: '\f324';
+}
+.icon-325:before {
+  content: '\f325';
+}
+.icon-326:before {
+  content: '\f326';
+}
+.icon-327:before {
+  content: '\f327';
+}
+.icon-328:before {
+  content: '\f328';
+}
+.icon-329:before {
+  content: '\f329';
+}
+.icon-330:before {
+  content: '\f330';
+}
+.icon-331:before {
+  content: '\f331';
+}
+.icon-332:before {
+  content: '\f332';
+}
+.icon-333:before {
+  content: '\f333';
+}
+.icon-334:before {
+  content: '\f334';
+}
+.icon-335:before {
+  content: '\f335';
+}
+.icon-336:before {
+  content: '\f336';
+}
+.icon-337:before {
+  content: '\f337';
+}
+.icon-338:before {
+  content: '\f338';
+}
+.icon-339:before {
+  content: '\f339';
+}
+.icon-340:before {
+  content: '\f340';
+}
+.icon-341:before {
+  content: '\f341';
+}
+.icon-342:before {
+  content: '\f342';
+}
+.icon-343:before {
+  content: '\f343';
+}
+.icon-344:before {
+  content: '\f344';
+}
+.icon-345:before {
+  content: '\f345';
+}
+.icon-346:before {
+  content: '\f346';
+}
+.icon-347:before {
+  content: '\f347';
+}
+.icon-348:before {
+  content: '\f348';
+}
+.icon-349:before {
+  content: '\f349';
+}
+.icon-350:before {
+  content: '\f350';
+}
+.icon-351:before {
+  content: '\f351';
+}
+.icon-352:before {
+  content: '\f352';
+}
+.icon-353:before {
+  content: '\f353';
+}
+.icon-354:before {
+  content: '\f354';
+}
+.icon-355:before {
+  content: '\f355';
+}
+.icon-356:before {
+  content: '\f356';
+}
+.icon-357:before {
+  content: '\f357';
+}
+.icon-358:before {
+  content: '\f358';
+}
+.icon-359:before {
+  content: '\f359';
+}
+.icon-360:before {
+  content: '\f360';
+}
+.icon-361:before {
+  content: '\f361';
+}
+.icon-362:before {
+  content: '\f362';
+}
+.icon-363:before {
+  content: '\f363';
+}
+.icon-364:before {
+  content: '\f364';
+}
+.icon-365:before {
+  content: '\f365';
+}
+.icon-366:before {
+  content: '\f366';
+}
+.icon-367:before {
+  content: '\f367';
+}
+.icon-368:before {
+  content: '\f368';
+}
+.icon-369:before {
+  content: '\f369';
+}
+.icon-370:before {
+  content: '\f370';
+}
+.icon-371:before {
+  content: '\f371';
+}
+.icon-372:before {
+  content: '\f372';
+}
+.icon-373:before {
+  content: '\f373';
+}
+.icon-374:before {
+  content: '\f374';
+}
+.icon-375:before {
+  content: '\f375';
+}
+.icon-376:before {
+  content: '\f376';
+}
+.icon-377:before {
+  content: '\f377';
+}
+.icon-378:before {
+  content: '\f378';
+}
+.icon-379:before {
+  content: '\f379';
+}
+.icon-380:before {
+  content: '\f380';
+}
+.icon-381:before {
+  content: '\f381';
+}
+.icon-382:before {
+  content: '\f382';
+}
+.icon-383:before {
+  content: '\f383';
+}
+.icon-384:before {
+  content: '\f384';
+}
+.icon-385:before {
+  content: '\f385';
+}
+.icon-386:before {
+  content: '\f386';
+}
+.icon-387:before {
+  content: '\f387';
+}
+.icon-388:before {
+  content: '\f388';
+}
+.icon-389:before {
+  content: '\f389';
+}
+.icon-390:before {
+  content: '\f390';
+}
+.icon-391:before {
+  content: '\f391';
+}
+.icon-392:before {
+  content: '\f392';
+}
+.icon-393:before {
+  content: '\f393';
+}
+.icon-394:before {
+  content: '\f394';
+}
+.icon-395:before {
+  content: '\f395';
+}
+.icon-396:before {
+  content: '\f396';
+}
+.icon-397:before {
+  content: '\f397';
+}
+.icon-398:before {
+  content: '\f398';
+}
+.icon-399:before {
+  content: '\f399';
+}
+.icon-400:before {
+  content: '\f400';
+}
+.icon-401:before {
+  content: '\f401';
+}
+.icon-402:before {
+  content: '\f402';
+}
+.icon-403:before {
+  content: '\f403';
+}
+.icon-404:before {
+  content: '\f404';
+}
+.icon-405:before {
+  content: '\f405';
+}
+.icon-406:before {
+  content: '\f406';
+}
+.icon-407:before {
+  content: '\f407';
+}
+.icon-408:before {
+  content: '\f408';
+}
+.icon-409:before {
+  content: '\f409';
+}
+.icon-410:before {
+  content: '\f410';
+}
+.icon-411:before {
+  content: '\f411';
+}
+.icon-412:before {
+  content: '\f412';
+}
+.icon-413:before {
+  content: '\f413';
+}
+.icon-414:before {
+  content: '\f414';
+}
+.icon-415:before {
+  content: '\f415';
+}
+.icon-416:before {
+  content: '\f416';
+}
+.icon-417:before {
+  content: '\f417';
+}
+.icon-418:before {
+  content: '\f418';
+}
+.icon-419:before {
+  content: '\f419';
+}
+.icon-420:before {
+  content: '\f420';
+}
+.icon-421:before {
+  content: '\f421';
+}
+.icon-422:before {
+  content: '\f422';
+}
+.icon-423:before {
+  content: '\f423';
+}
+.icon-424:before {
+  content: '\f424';
+}
+.icon-425:before {
+  content: '\f425';
+}
+.icon-426:before {
+  content: '\f426';
+}
+.icon-427:before {
+  content: '\f427';
+}
+.icon-428:before {
+  content: '\f428';
+}
+.icon-429:before {
+  content: '\f429';
+}
+.icon-430:before {
+  content: '\f430';
+}
+.icon-431:before {
+  content: '\f431';
+}
+.icon-432:before {
+  content: '\f432';
+}
+.icon-433:before {
+  content: '\f433';
+}
+.icon-434:before {
+  content: '\f434';
+}
+.icon-435:before {
+  content: '\f435';
+}
+.icon-436:before {
+  content: '\f436';
+}
+.icon-437:before {
+  content: '\f437';
+}
+.icon-438:before {
+  content: '\f438';
+}
+.icon-439:before {
+  content: '\f439';
+}
+.icon-440:before {
+  content: '\f440';
+}
+.icon-441:before {
+  content: '\f441';
+}
+.icon-442:before {
+  content: '\f442';
+}
+.icon-443:before {
+  content: '\f443';
+}
+.icon-444:before {
+  content: '\f444';
+}
+.icon-445:before {
+  content: '\f445';
+}
+.icon-446:before {
+  content: '\f446';
+}
+.icon-447:before {
+  content: '\f447';
+}
+.icon-448:before {
+  content: '\f448';
+}
+.icon-449:before {
+  content: '\f449';
+}
+.icon-450:before {
+  content: '\f450';
+}
+.icon-451:before {
+  content: '\f451';
+}
+.icon-452:before {
+  content: '\f452';
+}
+.icon-453:before {
+  content: '\f453';
+}
+.icon-454:before {
+  content: '\f454';
+}
+.icon-455:before {
+  content: '\f455';
+}
+.icon-456:before {
+  content: '\f456';
+}
+.icon-457:before {
+  content: '\f457';
+}
+.icon-458:before {
+  content: '\f458';
+}
+.icon-459:before {
+  content: '\f459';
+}
+.icon-460:before {
+  content: '\f460';
+}
+.icon-461:before {
+  content: '\f461';
+}
+.icon-462:before {
+  content: '\f462';
+}
+.icon-463:before {
+  content: '\f463';
+}
+.icon-464:before {
+  content: '\f464';
+}
+.icon-465:before {
+  content: '\f465';
+}
+.icon-466:before {
+  content: '\f466';
+}
+.icon-467:before {
+  content: '\f467';
+}
+.icon-468:before {
+  content: '\f468';
+}
+.icon-469:before {
+  content: '\f469';
+}
+.icon-470:before {
+  content: '\f470';
+}
+.icon-471:before {
+  content: '\f471';
+}
+.icon-472:before {
+  content: '\f472';
+}
+.icon-473:before {
+  content: '\f473';
+}
+.icon-474:before {
+  content: '\f474';
+}
+.icon-475:before {
+  content: '\f475';
+}
+.icon-476:before {
+  content: '\f476';
+}
+.icon-477:before {
+  content: '\f477';
+}
+.icon-478:before {
+  content: '\f478';
+}
+.icon-479:before {
+  content: '\f479';
+}
+.icon-480:before {
+  content: '\f480';
+}
+.icon-481:before {
+  content: '\f481';
+}
+.icon-482:before {
+  content: '\f482';
+}
+.icon-483:before {
+  content: '\f483';
+}
+.icon-484:before {
+  content: '\f484';
+}
+.icon-485:before {
+  content: '\f485';
+}
+.icon-486:before {
+  content: '\f486';
+}
+.icon-487:before {
+  content: '\f487';
+}
+.icon-488:before {
+  content: '\f488';
+}
+.icon-489:before {
+  content: '\f489';
+}
+.icon-490:before {
+  content: '\f490';
+}
+.icon-491:before {
+  content: '\f491';
+}
+.icon-492:before {
+  content: '\f492';
+}
+.icon-493:before {
+  content: '\f493';
+}
+.icon-494:before {
+  content: '\f494';
+}
+.icon-495:before {
+  content: '\f495';
+}
+.icon-496:before {
+  content: '\f496';
+}
+.icon-497:before {
+  content: '\f497';
+}
+.icon-498:before {
+  content: '\f498';
+}
+.icon-499:before {
+  content: '\f499';
+}
+.icon-500:before {
+  content: '\f500';
+}

@@ -358,7 +358,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.5.r-102 (16)';
+  content: 'v0.5.r-105 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
@@ -399,17 +399,6 @@ body.debug:after {
 .archxray .changes-shadow .thing {
   background: var(--debug-color);
 }
-.archxray .container,
-.archxray .container-fixed {
-  color: var(--debug-color);
-  background: rgba(85,188,237,0.3) !important;
-  border: 1px dashed var(--debug-color) !important;
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
-.archxray .pretty-content {
-  color: #000 !important;
-}
 .archxray .thing {
   background: rgba(86,188,225,0.5);
   padding: 1rem 0;
@@ -422,31 +411,24 @@ body.debug:after {
   border-radius: 3px;
   box-shadow: 0 0 1px 1px #576879 inset;
 }
-.archxray .r,
 .archxray .r .thing {
   background: rgba(250,101,99,0.5) !important;
 }
-.archxray .o,
 .archxray .o .thing {
   background: rgba(255,166,77,0.5) !important;
 }
-.archxray .y,
 .archxray .y .thing {
   background: rgba(255,224,86,0.5) !important;
 }
-.archxray .g,
 .archxray .g .thing {
   background: rgba(148,218,135,0.5) !important;
 }
-.archxray .b,
 .archxray .b .thing {
   background: rgba(51,153,255,0.5) !important;
 }
-.archxray .v,
 .archxray .v .thing {
   background: rgba(104,104,220,0.5) !important;
 }
-.archxray .u,
 .archxray .u .thing {
   background: rgba(181,181,181,0.5) !important;
 }
@@ -541,50 +523,89 @@ body.debug:after {
   border-radius: 5px;
   color: #fff;
 }
-.archxray .blocks:not(.stripes5) {
-  padding: 2rem;
-  margin: 1rem;
+.archxray .container,
+.archxray .container-fixed {
+  color: var(--debug-color);
+  background: rgba(85,188,237,0.3) !important;
+  border: 1px dashed var(--debug-color) !important;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
-.archxray input[class*="block-"],
-.archxray textarea[class*="block-"] {
-  background: #fff;
+.archxray .pretty-content {
   color: #000 !important;
 }
-.archxray .xray-blocks [class*="block-"]:not(input):not(textarea):not(.block-spacer):not(.block-breaker) {
-  padding: 1rem;
-  border-radius: 5px;
-  color: #fff;
-  box-shadow: 0 0 1px 1px #e8e8e8 inset;
+.archxray .r {
+  background: rgba(250,101,99,0.3);
+  border: 1px dashed #fa6563;
+  color: #fa6563;
 }
-.archxray .xray-blocks [class*="block-"]:not(input):not(textarea):not(.block-spacer):not(.block-breaker) {
-  background: rgba(86,188,225,0.3);
+.archxray .o {
+  background: rgba(255,166,77,0.3);
+  border: 1px dashed #ffa64d;
+  color: #ffa64d;
 }
-.archxray .as-tiles article,
-.archxray [class*="block-"][class*='-tile'] article {
-  padding: 2rem 1.25rem !important;
+.archxray .y {
+  background: rgba(255,224,86,0.3);
+  border: 1px dashed #ffe056;
+  color: #ffe056;
 }
-.archxray .xray-blocks .block-breaker {
-  background: rgba(249,100,203,0.3) !important;
-  border: 2px dashed #f964cb;
+.archxray .g {
+  background: rgba(148,218,135,0.3);
+  border: 1px dashed #94da87;
+  color: #94da87;
+}
+.archxray .b,
+.archxray .xray-blocks .blocks:not(.stripes5) {
+  background: rgba(51,153,255,0.3);
+  border: 1px dashed #39f;
+  color: #39f;
+}
+.archxray .v {
+  background: rgba(104,104,220,0.3);
+  border: 1px dashed #6868dc;
+  color: #6868dc;
+}
+.archxray .u,
+.archxray .xray-blocks [class*="block-"]:only-child {
+  background: rgba(232,232,232,0.3);
+  border: 1px dashed #e8e8e8;
+  color: #e8e8e8;
+}
+.archxray .u {
+  background: rgba(249,100,203,0.3);
+  border: 1px dashed #f964cb;
   color: #f964cb;
 }
-.archxray .xray-blocks .block-breaker:after {
-  font-size: 12px;
-  font-weight: bold;
-  content: 'BRK';
-  text-transform: uppercase;
+.archxray .xray-blocks [class*="block-"] > [class*='-pink'] {
+  background: #f964cb;
+  border: 1px dashed #f964cb;
+  color: #e8e8e8;
+}
+.archxray .xray-blocks [class*="block-"] > [class*='-orange'] {
+  background: #ffa64d;
+  border: 1px dashed #ffa64d;
+  color: #e8e8e8;
+}
+.archxray .xray-blocks [class*="block-"] > [class*='-green'] {
+  background: #d0fd87;
+  border: 1px dashed #d0fd87;
+  color: #e8e8e8;
+}
+.archxray .xray-blocks [class*='-item'] {
+  background: rgba(232,232,232,0.3);
+  border: 1px dashed #e8e8e8;
+  color: #e8e8e8;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
 }
 .archxray .xray-blocks .block-spacer {
-  background: rgba(148,218,135,0.3) !important;
-  border: 2px dashed #94da87 !important;
-  color: #94da87 !important;
+  background: rgba(148,218,135,0.3);
+  border: 1px dashed #94da87;
+  color: #94da87;
+  padding: 1rem;
+  border-radius: 5px;
 }
-.archxray .xray-blocks .block-vspacer {
-  background: rgba(208,253,135,0.3) !important;
-  border: 2px dashed #d0fd87 !important;
-  color: #d0fd87 !important;
-}
-.archxray .xray-blocks .block-vspacer:after,
 .archxray .xray-blocks .block-spacer:after {
   font-size: 12px;
   font-weight: bold;
@@ -592,11 +613,30 @@ body.debug:after {
   text-transform: uppercase;
   text-align: center;
 }
-.archxray .xray-blocks .block-vspacer:after {
-  content: 'VSP';
+.archxray .xray-blocks .block-lt:before {
+  font-family: Awzum;
+  font-size: 12px;
+  content: '\f061';
+  position: absolute;
+  top: -14px;
+  right: 0px;
+  color: var(--debug-color);
 }
-.archxray .xray-blocks .blocks {
-  background: rgba(232,232,232,0.5) !important;
-  border: 2px dashed #e8e8e8 !important;
-  color: #e8e8e8 !important;
+.archxray .xray-blocks .block-rt:before {
+  font-family: Awzum;
+  font-size: 12px;
+  content: '\f060';
+  position: absolute;
+  top: -14px;
+  left: 0px;
+  color: var(--debug-color);
+}
+.archxray .xray-blocks .block-ctr:before {
+  font-family: Awzum;
+  font-size: 12px;
+  content: '\f060';
+  position: absolute;
+  top: -14px;
+  left: 0px;
+  color: var(--debug-color);
 }
