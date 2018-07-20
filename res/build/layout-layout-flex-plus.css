@@ -3580,3 +3580,8 @@
 [class*="slot-"][class*="-auto"] {
   align-self: stretch;
 }
+[class*="cell-"][class*="-auto"] > [class~="slot"] > *,
+[class*="cell-"][class*="-auto"] > [class*="slot-"] > *,
+[class*="cell-"][class*="-auto"] > [class*="slot_"] > * {
+  height: 100%;
+}

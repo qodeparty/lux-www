@@ -358,7 +358,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.5.r-105 (16)';
+  content: 'v0.5.r-110 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
@@ -556,40 +556,81 @@ body.debug:after {
 }
 .archxray .b,
 .archxray .xray-blocks .blocks:not(.stripes5) {
-  background: rgba(51,153,255,0.3);
-  border: 1px dashed #39f;
-  color: #39f;
+  background: rgba(117,184,251,0.3);
+  border: 1px dashed #75b8fb;
+  color: #75b8fb;
 }
 .archxray .v {
-  background: rgba(104,104,220,0.3);
-  border: 1px dashed #6868dc;
-  color: #6868dc;
+  background: rgba(228,123,253,0.3);
+  border: 1px dashed #e47bfd;
+  color: #e47bfd;
 }
 .archxray .u,
-.archxray .xray-blocks [class*="block-"]:only-child {
+.block > [class*="block-"],
+.archxray .xray-blocks .block > .block {
   background: rgba(232,232,232,0.3);
   border: 1px dashed #e8e8e8;
   color: #e8e8e8;
 }
-.archxray .u {
+.archxray .p {
   background: rgba(249,100,203,0.3);
   border: 1px dashed #f964cb;
   color: #f964cb;
 }
+.archxray .xray-blocks.puff-blocks [class*="block-"]:not(.block-spacer),
+.archxray .xray-blocks.puff-blocks .block:not(.block-spacer) {
+  padding: 1rem;
+  position: relative;
+}
+.archxray .xray-blocks [class*="block-"][class*='-red'],
+.archxray .xray-blocks [class*="block-"] > [class*='-red'] {
+  background: #fa6563;
+  border: 1px dashed #fa6563;
+  color: #404058;
+}
+.archxray .xray-blocks [class*="block-"][class*='-pink'],
 .archxray .xray-blocks [class*="block-"] > [class*='-pink'] {
   background: #f964cb;
   border: 1px dashed #f964cb;
-  color: #e8e8e8;
+  color: #404058;
 }
+.archxray .xray-blocks [class*="block-"][class*='-orange'],
 .archxray .xray-blocks [class*="block-"] > [class*='-orange'] {
   background: #ffa64d;
   border: 1px dashed #ffa64d;
-  color: #e8e8e8;
+  color: #404058;
 }
-.archxray .xray-blocks [class*="block-"] > [class*='-green'] {
+.archxray .xray-blocks [class*="block-"][class*='-lime'],
+.archxray .xray-blocks [class*="block-"] > [class*='-lime'] {
   background: #d0fd87;
   border: 1px dashed #d0fd87;
-  color: #e8e8e8;
+  color: #404058;
+}
+.archxray .xray-blocks [class*="block-"][class*='-green'],
+.archxray .xray-blocks [class*="block-"] > [class*='-green'] {
+  background: #94da87;
+  border: 1px dashed #94da87;
+  color: #404058;
+}
+.archxray .xray-blocks [class*="block-"][class*='-blue'],
+.archxray .xray-blocks [class*="block-"] > [class*='-blue'] {
+  background: #39f;
+  border: 1px dashed #39f;
+  color: #404058;
+}
+.archxray .xray-blocks [class*="block-"][class*='-cyan'],
+.archxray .xray-blocks [class*="block-"] > [class*='-cyan'] {
+  background: #75b8fb;
+  border: 1px dashed #75b8fb;
+  color: #404058;
+}
+.block > [class*="block-"],
+.archxray .xray-blocks .block > .block {
+  padding: 0.5rem;
+}
+.archxray .xray-blocks .blocks > [class*="block-"]:only-child {
+  background: transparent;
+  border: none;
 }
 .archxray .xray-blocks [class*='-item'] {
   background: rgba(232,232,232,0.3);
@@ -603,8 +644,8 @@ body.debug:after {
   background: rgba(148,218,135,0.3);
   border: 1px dashed #94da87;
   color: #94da87;
-  padding: 1rem;
-  border-radius: 5px;
+  padding: 0 5px;
+  border-radius: 2px;
 }
 .archxray .xray-blocks .block-spacer:after {
   font-size: 12px;
@@ -613,30 +654,70 @@ body.debug:after {
   text-transform: uppercase;
   text-align: center;
 }
-.archxray .xray-blocks .block-lt:before {
-  font-family: Awzum;
+.archxray .xray-blocks .block-breaker {
+  background: rgba(249,100,203,0.3);
+  border: 1px dashed #f964cb;
+  color: #f964cb;
+  padding: 0 5px;
+  border-radius: 2px;
+}
+.archxray .xray-blocks .block-breaker:after {
   font-size: 12px;
-  content: '\f061';
+  font-weight: bold;
+  content: 'BRK';
+  text-transform: uppercase;
+  text-align: center;
+}
+.archxray .xray-blocks [class*="-0th"]:after,
+.archxray .xray-blocks [class*="-nth"]:after,
+.archxray .xray-blocks [class*="-ctr"]:after,
+.archxray .xray-blocks [class*="-item"]:after,
+.archxray .xray-blocks [class*="-resp"] [class*="-0th"]:after,
+.archxray .xray-blocks [class*="-resp"] [class*="-nth"]:after,
+.archxray .xray-blocks [class*="-resp"] [class*="-ctr"]:after {
+  font-family: Material;
+  font-size: 14px;
   position: absolute;
-  top: -14px;
+  color: inherit;
+}
+.archxray .xray-blocks [class*="-0th"]:after {
+  content: '\f792';
+  top: 0px;
+  left: 0px;
+}
+.archxray .xray-blocks [class*="-nth"]:after {
+  content: '\f793';
+  top: 0px;
   right: 0px;
-  color: var(--debug-color);
 }
-.archxray .xray-blocks .block-rt:before {
-  font-family: Awzum;
-  font-size: 12px;
-  content: '\f060';
-  position: absolute;
-  top: -14px;
-  left: 0px;
-  color: var(--debug-color);
+.archxray .xray-blocks [class*="-ctr"]:after {
+  content: '\f61e';
+  top: 0px;
+  left: 50%;
 }
-.archxray .xray-blocks .block-ctr:before {
-  font-family: Awzum;
-  font-size: 12px;
-  content: '\f060';
-  position: absolute;
-  top: -14px;
-  left: 0px;
-  color: var(--debug-color);
+.archxray .xray-blocks [class*="-item"]:after {
+  content: '\f4ca';
+  top: 0px;
+  left: 50%;
+}
+@media screen and (max-width: 47.9375rem) {
+  .archxray .xray-blocks [class*="-resp"] [class*="-0th"]:after {
+    content: '\f623';
+    position: absolute;
+    top: 0px;
+    left: 48%;
+  }
+  .archxray .xray-blocks [class*="-resp"] [class*="-nth"]:after {
+    content: '\f621';
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: 0px !important;
+    left: 48%;
+  }
+  .archxray .xray-blocks [class*="-resp"] [class*="-ctr"]:after {
+    content: '\f622';
+    top: 0px;
+    left: 48%;
+  }
 }
