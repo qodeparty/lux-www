@@ -14020,7 +14020,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 body.debug:after {
-  content: 'v0.6.r-112 (16)';
+  content: 'v0.6.r-122 (16)';
   padding: 2px 8px;
   position: sticky;
   left: 0.5rem;
@@ -14060,6 +14060,9 @@ body.debug:after {
 }
 .archxray .changes-shadow .thing {
   background: var(--debug-color);
+}
+html {
+  overflow-y: hidden !important;
 }
 .archxray .thing {
   background: rgba(86,188,225,0.5);
