@@ -25,3 +25,48 @@
 [class*="_w25"] {
   flex-basis: 25%;
 }
+.flow {
+  display: block;
+}
+.flow-inline {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.flex-inline {
+  display: inline-flex;
+}
+.inline {
+  display: inline;
+}
+.none {
+  display: none;
+}
+.floar-lt {
+  float: left;
+}
+.float-rt {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* positioning */
+.static {
+  position: static;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}

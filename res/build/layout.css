@@ -1,6 +1,36 @@
 /* //////////////////////////////////////////////////////////////////////////////
 // Includes
 ////////////////////////////////////////////////////////////////////////////// */
+.layout {
+  display: flex;
+  position: relative;
+  align-items: stretch;
+  flex-direction: column;
+}
+.layout .columns {
+  display: flex;
+  position: relative;
+  align-items: stretch;
+  flex-direction: row;
+}
+.layout .rows {
+  display: flex;
+  position: relative;
+  align-items: stretch;
+  flex-direction: column;
+}
+.layout .content {
+  display: flex;
+  flex: 1 1 100%;
+}
+.layout .sidebar {
+  max-width: 30%;
+  flex: 1 0 30%;
+}
+.layout .rows > .sidebar {
+  max-width: inherit;
+  flex-basis: auto;
+}
 .wrapper,
 .blocks,
 .block {
@@ -110,8 +140,8 @@
 }
 .block .elem,
 [class*="block-"] [class*='elem'] {
-  display: inline-flex;
   flex: 1 1 auto;
+  flex-direction: column;
 }
 @media screen and (max-width: 47.9375rem) {
   .as-tiles .block:not(.block-item):not(.block-inline) {

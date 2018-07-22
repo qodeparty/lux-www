@@ -83,11 +83,11 @@ body.debug {
     background: #147bbc;
     --debug-color: #94d8ed;
     --box-shadow-color: #94d8ed;
-    --display-color: #da7f25;
+    --display-color: #ffa64d;
   }
   .as-display .show-on-tablet {
     display: block;
-    background: #da7f25;
+    background: #ffa64d;
   }
   .is-size-1-tablet {
     font-size: 2.75rem;
@@ -102,11 +102,11 @@ body.debug {
     background: #28a9e1;
     --debug-color: #c1e4ef;
     --box-shadow-color: #c1e4ef;
-    --display-color: #ceb430;
+    --display-color: #ffe056;
   }
   .as-display .show-on-desktop {
     display: block;
-    background: #ceb430;
+    background: #ffe056;
   }
   .is-size-1-desktop {
     font-size: 2.75rem;
@@ -137,11 +137,11 @@ body.debug {
     background: #94d8ed;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
-    --display-color: #39f;
+    --display-color: #75b8fb;
   }
   .as-display .show-on-full {
     display: block;
-    background: #39f;
+    background: #75b8fb;
   }
   .is-size-1-full {
     font-size: 2.75rem;
@@ -156,11 +156,11 @@ body.debug {
     background: #c1e4ef;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
-    --display-color: #6868dc;
+    --display-color: #39f;
   }
   .as-display .show-on-jumbo {
     display: block;
-    background: #6868dc;
+    background: #39f;
   }
   .row > .jumbo-with-span-2 {
     flex: none;
@@ -181,11 +181,11 @@ body.debug {
     background: #cbeaf3;
     --debug-color: #147bbc;
     --box-shadow-color: #147bbc;
-    --display-color: #404058;
+    --display-color: #e47bfd;
   }
   .as-display .show-on-ultra {
     display: block;
-    background: #404058;
+    background: #e47bfd;
   }
   .is-size-1-ultra {
     font-size: 2.75rem;

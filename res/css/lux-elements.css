@@ -7906,3 +7906,32 @@ h6.is-title {
 .icon-2594:before {
   content: '\fa22';
 }
+.media,
+.media-item,
+.media-list > li {
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 100%;
+  align-items: stretch;
+}
+.media > img,
+.media > figure,
+.media-item > img,
+.media-item > figure,
+.media-list > li > img,
+.media-list > li > figure,
+[class*='media-'][class*="-0th"] {
+  flex: 0 0 auto;
+  order: -1;
+}
+[class*='media-'][class*="-nth"] {
+  flex: 0 0 auto;
+  order: 9999;
+}
+.media-group {
+  display: block;
+}
+.media-item,
+.media-list > li:not(:last-child) {
+  border-bottom: 1px dotted #333;
+}

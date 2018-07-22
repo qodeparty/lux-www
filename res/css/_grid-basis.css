@@ -16,23 +16,23 @@
 }
 
 
-.layout > .head{
+.glayout > .head{
   grid-area: h;
 }
 
-.layout > .nav{
+.glayout > .nav{
   grid-area: n;
 }
 
-.layout > .sidebar{
+.glayout > .sidebar{
   grid-area: s;
 }
 
-.layout > .body{
+.glayout > .body{
   grid-area: b;
 }
 
-.layout > .footer{
+.glayout > .footer{
   grid-area: f;
 }
 
