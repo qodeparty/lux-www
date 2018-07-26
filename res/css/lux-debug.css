@@ -358,7 +358,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 .version:after {
-  content: 'v0.8.5.142 (16)';
+  content: 'v0.8.6.144 (16)';
   padding: 2px 8px;
   position: fixed;
   right: 0.2rem;
