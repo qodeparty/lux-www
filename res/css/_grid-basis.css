@@ -15,7 +15,6 @@
                        "f f f f";
 }
 
-
 .glayout > .head{
   grid-area: h;
 }
@@ -35,7 +34,6 @@
 .glayout > .footer{
   grid-area: f;
 }
-
 
 section div{
   border:1px dotted white;

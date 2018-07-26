@@ -102,11 +102,11 @@ body.debug {
     background: #28a9e1;
     --debug-color: #c1e4ef;
     --box-shadow-color: #c1e4ef;
-    --display-color: #ffe056;
+    --display-color: #ceb430;
   }
   .as-display .show-on-desktop {
     display: block;
-    background: #ffe056;
+    background: #ceb430;
   }
   .is-size-1-desktop {
     font-size: 2.75rem;

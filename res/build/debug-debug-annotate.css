@@ -170,7 +170,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 .version:after {
-  content: 'v0.7.129 (16)';
+  content: 'v0.8.135 (16)';
   padding: 2px 8px;
   position: fixed;
   right: 0.2rem;

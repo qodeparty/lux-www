@@ -358,7 +358,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 .version:after {
-  content: 'v0.7.129 (16)';
+  content: 'v0.8.5.142 (16)';
   padding: 2px 8px;
   position: fixed;
   right: 0.2rem;
@@ -645,6 +645,7 @@ body.debug.theme-unity {
   margin: 15px;
   border-radius: 5px;
 }
+.archxray .xray-blocks .slot-spacer:after,
 .archxray .xray-blocks .block-spacer:after,
 .archxray .xray-blocks .block-breaker:after,
 .archxray .xray-blocks [class*="block-"][class*="-0th"]:after,
@@ -659,6 +660,7 @@ body.debug.theme-unity {
   position: absolute;
   color: inherit;
 }
+.archxray .xray-blocks .slot-spacer,
 .archxray .xray-blocks .block-spacer {
   background: rgba(148,218,135,0.3);
   border: 1px dashed #94da87;
@@ -667,6 +669,7 @@ body.debug.theme-unity {
   border-radius: 2px;
   position: relative;
 }
+.archxray .xray-blocks .slot-spacer:after,
 .archxray .xray-blocks .block-spacer:after {
   content: '\f84d';
   top: 1px;
@@ -728,4 +731,39 @@ body.debug.theme-unity {
     top: 1px;
     left: 48%;
   }
+}
+.media-image {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #dae1e7;
+  background: #f8fafc;
+  position: relative;
+  border-radius: 2px;
+}
+.media-image:after {
+  position: absolute;
+  content: attr(data-meta);
+  font-size: 12px;
+  top: 43px;
+  left: 25px;
+  color: inherit;
+/* #dae1e7 */
+  text-transform: capitalize;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(10,10,10,0.2);
+  border-radius: 50%;
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dot:after {
+  content: '×';
+  position: absolute;
+  top: 5px;
+  left: 7px;
 }
