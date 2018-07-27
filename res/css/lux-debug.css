@@ -358,7 +358,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 .version:after {
-  content: 'v0.8.6.144 (16)';
+  content: 'v0.8.6.145 (16)';
   padding: 2px 8px;
   position: fixed;
   right: 0.2rem;
@@ -455,7 +455,6 @@ body.debug.theme-unity {
 .archxray .v1 .thing {
   background: #6868dc !important;
 }
-.archxray .w1,
 .archxray .w1 .thing {
   background: #e8e8e8 !important;
 }
@@ -525,8 +524,8 @@ body.debug.theme-unity {
 .archxray .container,
 .archxray .container-fixed {
   color: var(--debug-color);
-  background: rgba(85,188,237,0.3) !important;
-  border: 1px dashed var(--debug-color) !important;
+  background: rgba(85,188,237,0.3);
+  border: 1px dashed var(--debug-color);
   margin-bottom: 1rem;
   padding: 1rem;
 }
@@ -569,18 +568,33 @@ body.debug.theme-unity {
   border: 1px dashed #e8e8e8;
   color: #e8e8e8 !important;
 }
+.archxray .u {
+  background: rgba(232,232,232,0.3);
+  border: 1px dashed #e8e8e8;
+  color: #e8e8e8 !important;
+}
+.archxray .w {
+  background: rgba(255,255,255,0.3);
+  border: 1px dashed #fff;
+  color: #fff !important;
+}
+.archxray .w1 {
+  background: #fff;
+  border: 1px dashed #fff;
+  color: #404058;
+}
 .archxray .p {
   background: rgba(249,100,203,0.3);
   border: 1px dashed #f964cb;
   color: #f964cb !important;
 }
 .archxray .xray-blocks.puff-blocks [class*="block-"]:not(.block-spacer),
-.archxray .xray-blocks.puff-blocks .block:not(.block-spacer),
-.archxray .xray-blocks.puff-blocks [class*='media-'],
-.archxray .xray-blocks.puff-blocks .media {
+.archxray .xray-blocks.puff-blocks .block:not(.block-spacer) {
   padding: 1rem;
   position: relative;
 }
+.archxray .xray-blocks.puff-blocks [class*='media-'],
+.archxray .xray-blocks.puff-blocks .media,
 .archxray .xray-blocks.puff-blocks .media-list {
   padding: 0.25rem;
 }
@@ -626,7 +640,7 @@ body.debug.theme-unity {
   border: 1px dashed #75b8fb;
   color: #404058;
 }
-.archxray .xray-blocks [class*='media-'][class*='-grey'],
+.archxray .xray-blocks [class*='media'][class*='-grey'],
 .archxray .xray-blocks [class*="block-"][class*='-grey'],
 .archxray .xray-blocks [class*="block-"] > [class*='-grey'] {
   background: #e8e8e8;
@@ -732,38 +746,60 @@ body.debug.theme-unity {
     left: 48%;
   }
 }
-.media-image {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #dae1e7;
-  background: #f8fafc;
-  position: relative;
-  border-radius: 2px;
+.archxray .control {
+  border: 1px dotted rgba(147,128,108,0.1);
+  color: rgba(147,128,108,0.25);
 }
-.media-image:after {
-  position: absolute;
-  content: attr(data-meta);
-  font-size: 12px;
-  top: 43px;
-  left: 25px;
-  color: inherit;
-/* #dae1e7 */
-  text-transform: capitalize;
+.archxray .control input {
+  font-size: 1rem;
+  color: #363636;
+  height: 2.5em;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid rgba(147,128,108,0.25);
+  border-bottom: 1px solid rgba(147,128,108,0.25);
 }
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: rgba(10,10,10,0.2);
-  border-radius: 50%;
-  display: inline-block;
-  color: #fff;
-  position: relative;
-  font-weight: bold;
+.archxray .control .aside,
+.archxray .control button.aside {
+  background: rgba(147,128,108,0.1);
+  border: 1px solid rgba(147,128,108,0.25);
+  color: #a79f9d;
+  font-weight: 400;
+  height: 2.5em;
+  padding: 0.5em;
+  line-height: 1.5;
+}
+.archxray .control button.aside:hover {
+  background: rgba(168,215,226,0.25);
+  color: rgba(78,192,228,0.5);
+}
+.archxray .control button.aside:active {
+  background: #a79f9d;
+  color: #efefef;
+}
+.archxray .control [placeholder]::placeholder {
+  color: rgba(147,128,108,0.25);
+  line-height: 1.5;
+}
+.archxray ._debug_status ._debug {
+  margin-left: 20px;
+  background: rgba(148,218,135,0.3);
+  border: 1px solid #94da87;
+  color: #94da87;
+  border-radius: 3px;
   cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+  outline: none;
+  width: 90px;
 }
-.dot:after {
-  content: '×';
+.archxray ._debug_status ._debug:active {
+  background: #399e54;
+}
+.archxray ._debug_status ._debug:before {
+  content: '\f456';
+  font-size: 1.5rem;
   position: absolute;
+  left: 5px;
   top: 5px;
-  left: 7px;
 }
