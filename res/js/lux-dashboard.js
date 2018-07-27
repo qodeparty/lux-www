@@ -736,9 +736,10 @@ if(typeof Vue!=='undefined'){
                   console.warn("ERROR!!");
                 }
 
-                console.log(iframe['name'],iframe);
+                //console.log(iframe['name'],iframe);
 
-                if( !iframe['name'] || iframe['name'] ==='viewer' ){
+                //recover broken url saved in localstorage
+                if( !iframe['name'] || iframe['name'] === 'viewer' ){
                   setTimeout(()=>{
                     localStorage.removeItem('lux_activePage');
                     ap = 'test/layout-standard.html';
