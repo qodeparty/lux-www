@@ -745,7 +745,7 @@ if(typeof Vue!=='undefined'){
                     ap = 'test/layout-standard.html';
                     this.viewerSrc=ap;
                     console.warn('IFRAME Error',ap);
-                  },1);
+                  },1000);
                 }
 
                 this.$nextTick(()=>{

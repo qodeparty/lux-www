@@ -1,6 +1,5 @@
 _*
 dist
-build
 local-*
 *-local*
 *.bak

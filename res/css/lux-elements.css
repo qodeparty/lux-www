@@ -34,9 +34,10 @@ h6.is-title {
 }
 @media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
   .container-fixed {
-    width: 17rem;
+    width: 22.5rem;
     max-width: 21.5rem;
     --media: 'nano';
+    --width: 360 360;
   }
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
@@ -44,6 +45,7 @@ h6.is-title {
     width: 22.5rem;
     max-width: 47rem;
     --media: 'mobile';
+    --width: 360 768;
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
@@ -51,6 +53,7 @@ h6.is-title {
     width: 48rem;
     max-width: 63rem;
     --media: 'tablet';
+    --width: 768 1024;
   }
 }
 @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
@@ -58,6 +61,7 @@ h6.is-title {
     width: 64rem;
     max-width: 75rem;
     --media: 'desktop';
+    --width: 1024 1216;
   }
 }
 @media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
@@ -65,6 +69,7 @@ h6.is-title {
     width: 76rem;
     max-width: 89rem;
     --media: 'wide';
+    --width: 1216 1440;
   }
 }
 @media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
@@ -72,6 +77,7 @@ h6.is-title {
     width: 90rem;
     max-width: 119rem;
     --media: 'full';
+    --width: 1440 1920;
   }
 }
 @media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
@@ -79,6 +85,7 @@ h6.is-title {
     width: 120rem;
     max-width: 159rem;
     --media: 'jumbo';
+    --width: 1920 2560;
   }
 }
 @media screen and (min-width: 160rem) {
@@ -86,6 +93,7 @@ h6.is-title {
     width: 160rem;
     max-width: 623.9375rem;
     --media: 'ultra';
+    --width: 2560 9999;
   }
 }
 .iconset {

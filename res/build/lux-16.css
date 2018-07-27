@@ -3363,9 +3363,10 @@ h6.is-title {
 }
 @media screen and (min-width: 0rem) and (max-width: 22.4375rem) {
   .container-fixed {
-    width: 17rem;
+    width: 22.5rem;
     max-width: 21.5rem;
     --media: 'nano';
+    --width: 360 360;
   }
 }
 @media screen and (min-width: 22.5rem) and (max-width: 47.9375rem) {
@@ -3373,6 +3374,7 @@ h6.is-title {
     width: 22.5rem;
     max-width: 47rem;
     --media: 'mobile';
+    --width: 360 768;
   }
 }
 @media screen and (min-width: 48rem) and (max-width: 63.9375rem) {
@@ -3380,6 +3382,7 @@ h6.is-title {
     width: 48rem;
     max-width: 63rem;
     --media: 'tablet';
+    --width: 768 1024;
   }
 }
 @media screen and (min-width: 64rem) and (max-width: 75.9375rem) {
@@ -3387,6 +3390,7 @@ h6.is-title {
     width: 64rem;
     max-width: 75rem;
     --media: 'desktop';
+    --width: 1024 1216;
   }
 }
 @media screen and (min-width: 76rem) and (max-width: 89.9375rem) {
@@ -3394,6 +3398,7 @@ h6.is-title {
     width: 76rem;
     max-width: 89rem;
     --media: 'wide';
+    --width: 1216 1440;
   }
 }
 @media screen and (min-width: 90rem) and (max-width: 119.9375rem) {
@@ -3401,6 +3406,7 @@ h6.is-title {
     width: 90rem;
     max-width: 119rem;
     --media: 'full';
+    --width: 1440 1920;
   }
 }
 @media screen and (min-width: 120rem) and (max-width: 159.9375rem) {
@@ -3408,6 +3414,7 @@ h6.is-title {
     width: 120rem;
     max-width: 159rem;
     --media: 'jumbo';
+    --width: 1920 2560;
   }
 }
 @media screen and (min-width: 160rem) {
@@ -3415,6 +3422,7 @@ h6.is-title {
     width: 160rem;
     max-width: 623.9375rem;
     --media: 'ultra';
+    --width: 2560 9999;
   }
 }
 .iconset {
@@ -12066,7 +12074,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 .version:after {
-  content: 'v0.8.6.145 (16)';
+  content: 'v0.8.6.150 (16)';
   padding: 2px 8px;
   position: fixed;
   right: 0.2rem;
@@ -12369,6 +12377,7 @@ body.debug.theme-unity {
 }
 .archxray .xray-blocks .slot-spacer:after,
 .archxray .xray-blocks .block-spacer:after,
+.archxray .xray-blocks .control-breaker:after,
 .archxray .xray-blocks .block-breaker:after,
 .archxray .xray-blocks [class*="block-"][class*="-0th"]:after,
 .archxray .xray-blocks [class*="block-"][class*="-nth"]:after,
@@ -12397,6 +12406,7 @@ body.debug.theme-unity {
   top: 1px;
   left: 2px;
 }
+.archxray .xray-blocks .control-breaker,
 .archxray .xray-blocks .block-breaker {
   background: rgba(249,100,203,0.3);
   border: 1px dashed #f964cb;
@@ -12405,6 +12415,7 @@ body.debug.theme-unity {
   border-radius: 2px;
   position: relative;
 }
+.archxray .xray-blocks .control-breaker:after,
 .archxray .xray-blocks .block-breaker:after {
   content: '\f60C';
   top: 1px;
@@ -12458,6 +12469,15 @@ body.debug.theme-unity {
   border: 1px dotted rgba(147,128,108,0.1);
   color: rgba(147,128,108,0.25);
 }
+.archxray .field > label {
+  border: 1px dotted #75b8fb;
+  margin-bottom: 2px;
+}
+.archxray .control .elem {
+  border: 1px dotted #75b8fb;
+  margin: 2px;
+  min-height: 2rem;
+}
 .archxray .control input {
   font-size: 1rem;
   color: #363636;
@@ -12500,6 +12520,8 @@ body.debug.theme-unity {
   position: relative;
   outline: none;
   width: 90px;
+  height: 40px;
+  z-index: 999;
 }
 .archxray ._debug_status ._debug:active {
   background: #399e54;
