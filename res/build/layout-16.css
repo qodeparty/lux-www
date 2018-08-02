@@ -41,6 +41,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+.block > .block-item {
+  display: flex;
+  flex-basis: auto;
+  flex: 1 1;
+}
 .block.-vert,
 .block.-vresp {
   flex-direction: column;
@@ -115,11 +120,6 @@
 }
 .block-item.-btm {
   align-self: flex-end;
-}
-.block > .block-item {
-  display: flex;
-  flex-basis: auto;
-  flex: 1 1;
 }
 .block-item {
   display: inline-block;

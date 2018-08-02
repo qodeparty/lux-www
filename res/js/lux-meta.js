@@ -1,10 +1,9 @@
-//// lux generated javascript file Fri Jul 27 23:10:30 UTC 2018
+//// lux generated javascript file Thu Aug  2 21:13:06 UTC 2018
 const LUX_VERSION="v0.8.6"
-const LUX_BUILD="150"
+const LUX_BUILD="152"
 const LUX_BASIS=""
 const LUX_THEME="archxray"
-const LUX_TIMESTAMP="1532733030"
-
+const LUX_TIMESTAMP="1533244386"
 ////
 
 ////found 8 js files

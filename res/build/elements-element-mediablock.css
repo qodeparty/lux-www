@@ -1,3 +1,4 @@
+/* /////////////////////////////////////////////////////////////////////////// */
 .media,
 .media-item,
 .media-list > li {
@@ -28,6 +29,7 @@
 .media-list > li:not(:last-child) {
   border-bottom: 1px dotted #333;
 }
+/* /////////////////////////////////////////////////////////////////////////// */
 .media-list .media-image {
   width: 70px;
   height: 70px;

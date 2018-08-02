@@ -354,6 +354,11 @@ pre {
   display: flex;
   flex-wrap: wrap;
 }
+.block > .block-item {
+  display: flex;
+  flex-basis: auto;
+  flex: 1 1;
+}
 .block.-vert,
 .block.-vresp {
   flex-direction: column;
@@ -428,11 +433,6 @@ pre {
 }
 .block-item.-btm {
   align-self: flex-end;
-}
-.block > .block-item {
-  display: flex;
-  flex-basis: auto;
-  flex: 1 1;
 }
 .block-item {
   display: inline-block;
@@ -12074,7 +12074,7 @@ body.debug.theme-unity {
   font-size: 0.8rem;
 }
 .version:after {
-  content: 'v0.8.6.150 (16)';
+  content: 'v0.8.6.151 (16)';
   padding: 2px 8px;
   position: fixed;
   right: 0.2rem;
